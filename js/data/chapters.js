@@ -172,8 +172,86 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch03', number: 3, title: 'Windfall Island', bossName: null,
-    intro: 'Cast into the sea and rescued by a very talkative boat, Link washes up at the merriest port on the Great Sea. Shops, schemes, minigames — and a certain jailed mapmaker.',
-    sections: []
+    intro: 'Rescued by a boat with opinions, Link washes up at the merriest trading post on the Great Sea. Windfall is the game’s beating heart: shops, schemes, minigames, gossip — and half this guide’s side quests begin (or end) on its cobblestones. You only NEED one thing here today: a sail. But oh, what a place to dawdle.',
+    sections: [
+      {
+        id: 'c3-a', title: 'Washed ashore', collapsedByDefault: false,
+        steps: [
+          { id: 'c3-a-1', order: 1,
+            text: 'The King of Red Lions lays it out plainly: the bird answers to someone far worse, and a bare boat can’t chase destiny without a sail. Hop onto the dock and take the grand tour — the Bomb Shop on the hill (mind the prices; this will matter in a few chapters), Lenzo’s Picto Shop, the cafe, the School of Joy, Zunari’s market stall, the auction house by the dock, and the great windmill that isn’t turning. Windfall repays nosiness like nowhere else.',
+            callouts: [] },
+          { id: 'c3-a-2', order: 2,
+            text: 'Find Zunari — the hooded merchant shivering at his stall — and buy the SAIL for 80 rupees. Short on cash? Cut grass, smash pots, and check crawlspaces; the island practically sheds rupees. The sail is the single most important purchase in the game, and Zunari knows it, bless him.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c3-b', title: 'The jailbird cartographer', collapsedByDefault: false,
+        steps: [
+          { id: 'c3-b-1', order: 1,
+            text: 'Inside the town jail cell is a grown man in green pajamas named Tingle, and freeing him is as easy as stepping on the switch by his cell. Your rewards: TINGLE’S CHART (marking his island and two wallet-doubling fairies) and the TINGLE TUNER. On GameCube, the Tuner is the real deal — link a Game Boy Advance with a link cable and Tingle himself rides along in your pocket, selling bombs and potions and hiding five statues in the five great dungeons. If you have the hardware, the Tingle Statues checklist awaits.',
+            callouts: [
+              { type: 'specialChart', refId: 'sp-tingle', label: 'Tingle’s Chart — his thank-you gift' }
+            ] },
+          { id: 'c3-b-2', order: 2,
+            text: 'Before you leave the cell, crawl into the hole in the wall Tingle so kindly ignored. The dark maze beyond twists to a chest holding the PICTO BOX. It shoots in black and white and holds only three pictographs at a time — humble tools for what will become the longest quest in the game: the Nintendo Gallery’s 134 figurines. (Color comes later, via a certain firefly.)',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c3-c', title: 'A town full of trouble — first-visit checklist', collapsedByDefault: false,
+        steps: [
+          { id: 'c3-c-1', order: 1,
+            text: 'Mrs. Marie’s class is short four students: the Killer Bees are “hiding” around town, and she’d like them rounded up. Ivan lurks behind the gravestone, one boy’s up the tree by the town gate (roll into the trunk!), one hides behind the bomb shop, one behind the school. Corner all four for a Piece of Heart — and note the tree also shakes loose a Joy Pendant now and then.',
+            callouts: [
+              { type: 'heart', refId: 'hp-05', label: 'Piece of Heart — win hide-and-seek' },
+              { type: 'sidequest', refId: 'sq-killerbees', label: 'Killer Bees rounded up' }
+            ] },
+          { id: 'c3-c-2', order: 2,
+            text: 'In the hut by the dock, Salvatore runs Sinking Ships with all the enthusiasm of a wet sock. Sink the three squid-ships in under 24 cannonballs — open with a diagonal sweep to find long hulls, then bracket your hits. First win pays a Piece of Heart; win again for Treasure Chart 7.',
+            callouts: [
+              { type: 'heart', refId: 'hp-06', label: 'Piece of Heart — first win' },
+              { type: 'treasureChart', refId: 'tc-07', label: 'Treasure Chart 7 — repeat win' },
+              { type: 'sidequest', refId: 'sq-sinkingships', label: 'Sinking Ships beaten' }
+            ] },
+          { id: 'c3-c-3', order: 3,
+            text: 'After dark, the auction house lights up. Bidding is a war of nerves: hold A to charge your bid and time your pounce to break the room’s spirit — a huge raise late in the countdown usually seals it. The rotation of prizes includes TWO Pieces of Heart, Treasure Chart 18, and a Joy Pendant, so keep coming back on later nights (once you can conduct the Song of Passing, skipping to nightfall makes this painless).',
+            callouts: [
+              { type: 'heart', refId: 'hp-07', label: 'Piece of Heart — auction prize' },
+              { type: 'heart', refId: 'hp-08', later: true, label: 'Piece of Heart — a later auction night' },
+              { type: 'treasureChart', refId: 'tc-18', label: 'Treasure Chart 18 — auction prize' },
+              { type: 'sidequest', refId: 'sq-auction', later: true, label: 'Every auction prize claimed' }
+            ] },
+          { id: 'c3-c-4', order: 4,
+            text: 'Upstairs at the Picto Shop, Lenzo takes you on as a trainee if you complete three assignments with your new box: (1) catch Garrickson in the act of posting his doomed love letter, (2) catch Gossack in the cafe mid-flinch — he startles at anything, just watch and snap, and (3) frame Anton and Linda in one pictograph as they pass in the square, so their mutual crush has evidence. Finish all three and Lenzo rewards his new assistant with a Piece of Heart. His grander project — a Forest Firefly to unlock COLOR pictography — must wait for Forest Haven.',
+            callouts: [
+              { type: 'heart', refId: 'hp-14', label: 'Piece of Heart — become Lenzo’s assistant' },
+              { type: 'sidequest', refId: 'sq-pictobox', later: true, label: 'Deluxe Picto Box — finish after Forest Haven (firefly!)' }
+            ] },
+          { id: 'c3-c-5', order: 5,
+            text: 'Two slow-burn Windfall projects to open now and finish over many visits: buy flowers and decorations from Zunari and fill all 14 empty pots and pedestals around town (Sam on his bench pays a Piece of Heart when the whole island blooms), and once you meet the wandering Goron merchants on your travels, ferry Zunari’s trade goods between them until the Shop Guru Statue comes home — the Magic Armor is his thanks.',
+            callouts: [
+              { type: 'heart', refId: 'hp-11', later: true, label: 'Piece of Heart — all 14 flowers planted, talk to Sam' },
+              { type: 'sidequest', refId: 'sq-flowers', later: true, label: 'Windfall in bloom' },
+              { type: 'sidequest', refId: 'sq-zunari', later: true, label: 'Trading sequence — Magic Armor' }
+            ] },
+          { id: 'c3-c-6', order: 6,
+            text: 'By the gravestone, Tott is dancing his heart out and desperate for a conductor — but you don’t carry a baton yet. Remember him: the Song of Passing (day/night on demand) is arguably the most useful optional song in the game, and it’s your very first errand once the Wind Waker is in hand. Also file away: the townsfolk themselves are gallery subjects — 27 portraits in the Windfall room alone — but Carlov only accepts COLOR pictographs, so the great photo safari waits for the Deluxe Picto Box. Track them in the Figurines checklist. (A rare Blue ChuChu also calls this island home — see the Blue ChuChus checklist.)',
+            callouts: [
+              { type: 'song', refId: 'song-passing', later: true, label: 'Song of Passing — return with the Wind Waker' },
+              { type: 'secret', refId: 'chu-02', later: true, label: 'Blue ChuChu — on this island' }
+            ] }
+        ]
+      },
+      {
+        id: 'c3-d', title: 'Setting sail for Dragon Roost', collapsedByDefault: false,
+        steps: [
+          { id: 'c3-d-1', order: 1,
+            text: 'Sail rigged, pockets lighter, town thoroughly bothered — the King of Red Lions points you east toward the towering island with the smoking peak. Equip the sail to X, Y, or Z, catch the wind (it blows the right way today, a courtesy the sea won’t always extend), and remember A drops the sail when you want to stop. On the way out, wave at the gulls. Aryll would.',
+            callouts: [] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch04', number: 4, title: 'Dragon Roost Island', bossName: null,
