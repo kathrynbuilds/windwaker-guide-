@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Wind Waker Compass app icon: compass rose + Triforce over the Great Sea -->
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e6f9f"/>
+      <stop offset="1" stop-color="#0a3d62"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="512" height="512" rx="96" fill="url(#sea)"/>
+
+  <!-- stylized waves -->
+  <g fill="none" stroke="#48b1bf" stroke-width="10" stroke-linecap="round" opacity="0.5">
+    <path d="M60 402 q32 -26 64 0 t64 0 t64 0 t64 0 t64 0 t64 0" transform="translate(-15,0)"/>
+    <path d="M60 442 q32 -26 64 0 t64 0 t64 0 t64 0 t64 0 t64 0" transform="translate(17,0)" opacity="0.65"/>
+  </g>
+
+  <!-- compass ring -->
+  <circle cx="256" cy="222" r="150" fill="none" stroke="#f5e6c8" stroke-width="14"/>
+  <circle cx="256" cy="222" r="122" fill="none" stroke="#48b1bf" stroke-width="5" opacity="0.7"/>
+
+  <!-- compass points -->
+  <g fill="#f4d35e">
+    <polygon points="256,88 274,222 256,356 238,222"/>
+  </g>
+  <g fill="#48b1bf">
+    <polygon points="122,222 256,204 390,222 256,240"/>
+  </g>
+
+  <!-- Triforce at the heart of the compass -->
+  <g fill="#e9c46a" stroke="#0a3d62" stroke-width="6" stroke-linejoin="round">
+    <polygon points="256,152 291,212 221,212"/>
+    <polygon points="221,214 256,274 186,274"/>
+    <polygon points="291,214 326,274 256,274"/>
+  </g>
+
+  <!-- hub -->
+  <circle cx="256" cy="222" r="13" fill="#f5e6c8" stroke="#0a3d62" stroke-width="5"/>
+</svg>
