@@ -114,8 +114,61 @@ WWC_DATA.chapters = [
    * ==================================================================== */
   {
     id: 'ch02', number: 2, title: 'Forsaken Fortress', bossName: null,
-    intro: 'Stowed away in a barrel with a catapult for a ticket, Link infiltrates the searchlight-swept fortress where the great bird roosts — and where Aryll is held.',
-    sections: []
+    intro: 'A pirate ship for a taxi and a catapult for a front door. The fortress where the great bird roosts is all searchlights and patrols — and somewhere at the top, behind a locked door, is Aryll. No boss fight yet; this visit is pure nerve. You’ll be back near the end of the game to settle the score properly.',
+    sections: [
+      {
+        id: 'c2-a', title: 'Aboard the pirate ship', collapsedByDefault: false,
+        steps: [
+          { id: 'c2-a-1', order: 1,
+            text: 'The crossing takes a while, so meet the crew: Gonzo at the tiller, Zuko in the crow’s nest, and the rest scattered about. Then head below deck, where Niko — thrilled to finally outrank somebody — sets you his initiation: hit the switch, hop the raised platforms, and swing the hanging ropes to the far ledge before time runs out. Jump a little early off each swing and you’ll clear it. Your prize is the SPOILS BAG, home for everything enemies drop.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-cabanadeed', later: true,
+                label: 'Start hoarding Joy Pendants now — Mrs. Marie on Windfall will want 20 of them for a very nice deed…' },
+              { type: 'sidequest', refId: 'sq-heroscharm', later: true,
+                label: '…and she rewards a further pile of pendants with the Hero’s Charm much later. Every golden butterfly counts.' }
+            ] },
+          { id: 'c2-a-2', order: 2,
+            text: 'Night falls as the ship anchors off the Forsaken Fortress. Tetra’s plan is elegant in its way: stuff Link in a barrel and fire him over the wall. The launch goes exactly as well as it sounds — {{spoiler:you smack the wall, and the Hero’s Sword spins away and jams into a crack near the top of the fortress}}. You’re inside, unarmed, and on your own.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c2-b', title: 'Stealth among the searchlights', collapsedByDefault: false,
+        steps: [
+          { id: 'c2-b-1', order: 1,
+            text: 'Swim to the wooden ramp and learn the fortress rules. Three searchlights sweep the walls, and Moblins patrol the walkways — get caught in a beam or a Moblin’s gaze and the alarm sounds and you’re hauled to the prison cell. (If that happens: climb the table, hop to the bookshelf, slide the vase aside and crawl through the hidden hole. Every jail in this game leaks.)',
+            callouts: [] },
+          { id: 'c2-b-2', order: 2,
+            text: 'A barrel near the ramp is your best friend: climb inside, creep forward, and FREEZE — release the stick — whenever a patrol turns your way. Work your way up the outer ramps. Pots along the route hide recovery hearts, and rats scurry the corridors; they’re harmless enough, but they’ll happily bump you off narrow planks.',
+            callouts: [] },
+          { id: 'c2-b-3', order: 3,
+            text: 'Each searchlight is run by a Bokoblin on a lookout platform, reached by ladder. You aren’t defenseless: smash the pots up there for a BOKO STICK, or block with your shield until the Bokoblin drops its own, then batter it with its weapon. Putting out the southwest tower’s light is required to move on — dousing all three makes the whole climb calmer, and it’s deeply satisfying besides.',
+            callouts: [] },
+          { id: 'c2-b-4', order: 4,
+            text: 'With the lights down, cross the high walkways toward the glint in the wall. Mind the gaps where planks have rotted away — a fall usually means a wet restart of the climb, not a game over, but your pride takes the damage.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c2-c', title: 'The sword, the door, and the bird', collapsedByDefault: false,
+        steps: [
+          { id: 'c2-c-1', order: 1,
+            text: 'Pull the Hero’s Sword free at the top of the fortress — and let the ambush come to you: Bokoblins drop in the moment steel is back in your hand. After a whole fortress of sneaking, this fight feels wonderful. Cut loose.',
+            callouts: [] },
+          { id: 'c2-c-2', order: 2,
+            text: 'Climb the last ramp to the great door at the summit and step inside. There she is — Aryll, safe among the other kidnapped girls, {{spoiler:including two you’ll come to know well on Windfall: Mila and Maggie}}. And then the room goes dark. {{spoiler:The Helmaroc King plucks Link off the floor like a seed, presents him to a shadowed figure watching from the tower — and hurls him far out to sea.}}',
+            callouts: [] },
+          { id: 'c2-c-3', order: 3,
+            text: 'You wake to a voice with a wooden accent. {{spoiler:A red boat — a talking red boat, the King of Red Lions — has fished you out of the waves}}, and it has both a plan and strong opinions. Next stop: the merriest trading post on the Great Sea, and the true start of the adventure. (When you eventually return to this fortress in Chapter 10, bring the Picto Box: Moblins, Bombchus, Miniblins and Rats all pose here for the gallery.)',
+            callouts: [
+              { type: 'figurine', refId: 'fig-moblin', later: true, label: 'Moblin — pictograph on the return visit' },
+              { type: 'figurine', refId: 'fig-bombchu', later: true, label: 'Bombchu — pictograph on the return visit' },
+              { type: 'figurine', refId: 'fig-miniblin', later: true, label: 'Miniblin — pictograph on the return visit' },
+              { type: 'figurine', refId: 'fig-rat', later: true, label: 'Rat — pictograph on the return visit' }
+            ] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch03', number: 3, title: 'Windfall Island', bossName: null,
