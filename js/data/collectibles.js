@@ -182,9 +182,9 @@ WWC_DATA.collectibles = [
   { id: 'hp-43', name: 'Salvage — Treasure Chart 38', category: 'hearts', chapterHint: 13,
     locationText: 'Sunken at Three-Eye Reef',
     howTo: 'Treasure Chart 38 marks this heart at Three-Eye Reef. Mind the cannons on the reef!' },
-  { id: 'hp-44', name: 'Big Octo bonus — see Two-Eye Reef fairy', category: 'hearts', chapterHint: 13,
-    locationText: 'PLACEHOLDER — see review note',
-    howTo: 'REVIEW: This 44th slot is reserved pending verification of the full list — see the session review notes. It will be replaced with its correct source before Chapter 13 lands.' },
+  { id: 'hp-44', name: 'Dragon Roost — Mountain path ledge', category: 'hearts', chapterHint: 4,
+    locationText: 'Ledge off the path up Dragon Roost, past the bomb flowers',
+    howTo: 'On the outside climb up Dragon Roost (beyond the bomb-flower stretch), glide across to the out-of-reach ledge with the Deku Leaf — or pick your way around the cliffs — to reach the chest.' },
 
   /* ------------------------------------------------------------------ *
    *  TREASURE CHARTS (41)                                               *
