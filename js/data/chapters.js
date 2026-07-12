@@ -255,8 +255,81 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch04', number: 4, title: 'Dragon Roost Island', bossName: null,
-    intro: 'The island of the Rito postmen, where the sky spirit Valoo rages atop the peak and a young prince has lost his nerve.',
-    sections: []
+    intro: 'A mountain that smokes, a dragon that rages, and a post office that never stops. Dragon Roost is home to the bird-winged Rito, keepers of Din’s Pearl — and the place where the game hands you its namesake and teaches the sea to obey. Two of the best side quests in the game live here too.',
+    sections: [
+      {
+        id: 'c4-a', title: 'The baton and the breeze', collapsedByDefault: false,
+        steps: [
+          { id: 'c4-a-1', order: 1,
+            text: 'The moment you land, the King of Red Lions produces his real cargo: the WIND WAKER, the conductor’s baton of the ancient kings. Like every item on GameCube, it must be EQUIPPED to X, Y, or Z. Raise it and you conduct with the control stick — up, down, left, right — following the tempo shown on screen. It feels ceremonial because it is.',
+            callouts: [] },
+          { id: 'c4-a-2', order: 2,
+            text: 'Just up from the beach stands a stone slab — the Wind Shrine. Read it and conduct the three notes it shows. A wisp of a wind god named Zephos appears, delighted someone finally plays his tune: the WIND’S REQUIEM. From now on the wind blows wherever you point it. On GameCube this is the whole sailing game — every voyage starts with this song, so put the baton somewhere comfortable and leave it there.',
+            callouts: [
+              { type: 'song', refId: 'song-requiem', label: 'Wind’s Requiem — the song of the open sea' },
+              { type: 'figurine', refId: 'fig-zephos', later: true, label: 'Zephos — pictograph him at this shrine later (Deluxe Picto Box)' }
+            ] }
+        ]
+      },
+      {
+        id: 'c4-b', title: 'The Rito aerie', collapsedByDefault: false,
+        steps: [
+          { id: 'c4-b-1', order: 1,
+            text: 'Follow the path into the mountain’s hollow interior — the Rito aerie. Quill vouches for you (again; he’s making a habit of rescuing your reputation), and the Chieftain explains the crisis: the great dragon Valoo, who grants Rito youths their wings, has flown into an inexplicable rage. Prince Komali, due for his ceremony, has lost his nerve entirely.',
+            callouts: [] },
+          { id: 'c4-b-2', order: 2,
+            text: 'Visit Komali in his room off the lower hall — a sad boy clutching a beautiful red pearl. He won’t hand over {{spoiler:Din’s Pearl}} to a stranger with big talk. Fair enough. Someone believes in you, though: Medli, Valoo’s young attendant, asks you to meet her at the spring behind the aerie.',
+            callouts: [] },
+          { id: 'c4-b-3', order: 3,
+            text: 'Before heading out back, work the day job: Koboli at the mail desk will pay you to sort letters. Sort 25 or more before time runs out (accuracy first, speed comes) to start a chain that runs deep: rupees now, a job for shy Baito later, and eventually a grateful letter carrying a Piece of Heart. Meanwhile, Hoskit — the guard outside Komali’s room — pines for a gift for his girlfriend: 20 GOLDEN FEATHERS. Kargarocs drop them; deliver the pile whenever it’s ready and a Piece of Heart arrives by post the next day.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-mailsort', label: 'Mail sorting — start the chain (25+ letters)' },
+              { type: 'heart', refId: 'hp-16', later: true, label: 'Piece of Heart — completes the mail chain' },
+              { type: 'heart', refId: 'hp-17', later: true, label: 'Piece of Heart — 20 Golden Feathers for Hoskit' }
+            ] }
+        ]
+      },
+      {
+        id: 'c4-c', title: 'Medli at the spring', collapsedByDefault: false,
+        steps: [
+          { id: 'c4-c-1', order: 1,
+            text: 'Out the back door, the spring is a sorry sight — the pond has shrunk to a puddle since rockfall choked the flow, and Medli waits on the shore. She wants to reach the ledge above to help Valoo but can’t make the flight alone: pick her up, wait for the gust at your back (watch the grass bend), and THROW her up to the ledge. She makes it — and in thanks hands over her precious EMPTY BOTTLE.',
+            callouts: [
+              { type: 'bottle', refId: 'bottle-medli', label: 'Bottle #1 — from Medli (story-guaranteed)' }
+            ] },
+          { id: 'c4-c-2', order: 2,
+            text: 'That bottle is the key to the mountain: the trail up is blocked by boulders, and the bomb flowers that should clear them have withered in the heat. Scoop pond water and pour it on each withered plant — they perk up instantly. Toss the revived bomb flowers at the boulders to blast the path open.',
+            callouts: [] },
+          { id: 'c4-c-3', order: 3,
+            text: 'Climb the outer trail: red ChuChus underfoot, Kargarocs diving from the sky (your first Golden Feathers, conveniently), and rickety planks over long drops. At the trail’s top, Medli waits by the mouth of Dragon Roost Cavern — the way to Valoo runs straight through the mountain’s fiery guts. Next chapter: the first real dungeon.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c4-d', title: 'Around the island (optional)', collapsedByDefault: true,
+        steps: [
+          { id: 'c4-d-1', order: 1,
+            text: 'Off the mountain path, past the bomb-flower stretch, a chest sits on a ledge just out of reach. You can attempt the fiddly cliff route now, or file it away for a trivial Deku Leaf glide after Forest Haven — either way, a Piece of Heart waits up there.',
+            callouts: [
+              { type: 'heart', refId: 'hp-44', later: true, label: 'Piece of Heart — mountain-path ledge (Deku Leaf makes it easy)' }
+            ] },
+          { id: 'c4-d-2', order: 2,
+            text: 'With the wind finally yours to command, a perfect first free sail: Pawprint Isle sits one square west. Crawl into the hole atop its grassy dome — among the ChuChus inside waits a Piece of Heart. (A rare Blue ChuChu also haunts Pawprint; see the checklist when you go jelly-hunting.)',
+            callouts: [
+              { type: 'heart', refId: 'hp-31', label: 'Piece of Heart — inside Pawprint’s dome' },
+              { type: 'secret', refId: 'cave-pawprint-chuchu', label: 'Secret cave — the ChuChu dome' },
+              { type: 'secret', refId: 'chu-04', later: true, label: 'Blue ChuChu — on Pawprint Isle' }
+            ] },
+          { id: 'c4-d-3', order: 3,
+            text: 'Two island notes for later: Dragon Roost hides a combat-filled secret cave of its own (see the Secret Caves checklist once you’re better armed), and — IMPORTANT for gallery completionists — the Rito named KOGOLI will not be around forever. The moment you own the Deluxe Picto Box, sail back here and photograph him before anyone else on your list.',
+            callouts: [
+              { type: 'secret', refId: 'cave-dragonroost', later: true, label: 'Secret cave — Dragon Roost Island' },
+              { type: 'figurine', refId: 'fig-kogoli', later: true, label: 'Kogoli — MISSABLE figurine, photograph early!' },
+              { type: 'figurine', refId: 'fig-medli', later: true, label: 'Medli — and the whole Rito flock, once color pictos arrive' }
+            ] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch05', number: 5, title: 'Dragon Roost Cavern', bossName: 'Gohma',
