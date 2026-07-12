@@ -601,8 +601,87 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch09', number: 9, title: 'Tower of the Gods', bossName: 'Gohdan',
-    intro: 'The three pearls take their places, and from the sea rises a tower built by gods to test a hero.',
-    sections: []
+    intro: 'Three pearls, three lonely statues, and then the sea splits open and a tower older than the ocean rises to examine you. The third dungeon is a proper test — tides, statues, and a bow you’ll use for the rest of the game. Pass, and a bell rings over the whole Great Sea.',
+    sections: [
+      {
+        id: 'c9-a', title: 'Raising the tower', collapsedByDefault: false,
+        steps: [
+          { id: 'c9-a-1', order: 1,
+            text: 'The three Triangle Islands — Northern, Eastern, Southern — stand in a perfect ring around an empty stretch of sea. Each holds a goddess statue; match each pearl to the statue bearing its goddess’s crest (the pedestals and your boat both make it unmissable). Place all three and the sky answers: golden light joins the islands into a triangle, and the TOWER OF THE GODS heaves itself out of the deep at its center.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c9-b', title: 'The examination hall', collapsedByDefault: false,
+        steps: [
+          { id: 'c9-b-1', order: 1,
+            text: 'The lower floors breathe with the tide — water rises and falls on a timer, turning floors into pools and back. Watch the rhythm, ride your boat between ledges where it lets you, and be patient: rushing the tide is how shields get wet. Electric YELLOW CHUCHUS punish careless swords (stun at range), and BEAMOS turrets sweep the halls with eye-lasers — sidle behind them.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-yellowchuchu', later: true, label: 'Yellow ChuChu — gallery subject' },
+              { type: 'figurine', refId: 'fig-beamos', later: true, label: 'Beamos — gallery subject' }
+            ] },
+          { id: 'c9-b-2', order: 2,
+            text: 'The tower’s riddle: three servant statues must be carried home to the great hall. Some just need strong arms and careful jumps; one sits beyond a door only something SMALL can pass. A stone tablet mid-dungeon teaches the answer — the COMMAND MELODY, which lets your spirit possess and steer a statue directly. Unsettling? Extremely. Useful for the rest of the game? Also extremely.',
+            callouts: [
+              { type: 'song', refId: 'song-command', label: 'Command Melody — learned in the tower' },
+              { type: 'figurine', refId: 'fig-armos', later: true, label: 'Armos — wakes up angry' },
+              { type: 'figurine', refId: 'fig-armosknight', later: true, label: 'Armos Knight — wakes up angrier' }
+            ] },
+          { id: 'c9-b-3', order: 3,
+            text: 'Tingle Tuner riders: the GODDESS TINGLE STATUE hides in these halls — ten rupees of Tingle Bomb on the sweet spot. And keep your eyes on side chests as you climb; the tower hoards a Treasure Chart among its rewards.',
+            callouts: [
+              { type: 'item', refId: 'tingle-goddess', later: true, label: 'Goddess Tingle Statue — Tingle Bomb the hidden spot' }
+            ] }
+        ]
+      },
+      {
+        id: 'c9-c', title: 'The Hero’s Bow', collapsedByDefault: false,
+        steps: [
+          { id: 'c9-c-1', order: 1,
+            text: 'In a bare arena, the tower presents its practical exam: a DARKNUT, an armored knight with actual swordsmanship. Circle with L-target, parry or roll behind him, and strike the exposed back — piece by piece his armor crashes off until he fights bare and furious. He drops a KNIGHT’S CREST when he falls: start the collection, because Orca on Outset teaches the Hurricane Spin for ten of them.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-darknut', later: true, label: 'Darknut — gallery subject' },
+              { type: 'upgrade', refId: 'up-hurricane', later: true, label: 'Hurricane Spin — 10 Knight’s Crests to Orca' }
+            ] },
+          { id: 'c9-c-2', order: 2,
+            text: 'Your prize is the HERO’S BOW — from here to the credits, the answer to half the game’s questions. Sixty-arrow and ninety-nine-arrow quivers wait at two fairy fountains you can’t crack yet (Skull Hammer required); the bow itself starts modest, so make arrows count.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c9-d', title: 'Boss: {{spoiler:Gohdan}}', collapsedByDefault: false,
+        steps: [
+          { id: 'c9-d-1', order: 1,
+            text: 'Beyond the boss door floats the examiner itself: {{spoiler:GOHDAN, a colossal disembodied head flanked by two great hands}}. The sequence is strict and fair: ARROW the eye on each hand to knock them down, then ARROW both eyes on the face. When the head slumps with its mouth hanging open — BOMB down the hatch. Repeat until graduation.',
+            callouts: [] },
+          { id: 'c9-d-2', order: 2,
+            text: 'Run dry mid-fight? Watch the hands slam the platform — the tower restocks arrows and bombs for diligent students; this examiner wants you to PASS. Take the HEART CONTAINER when it’s done. Gallery note: from this boss onward you may already own the Deluxe Picto Box — bring it into every boss room and snap the portrait mid-fight, because bosses never sit twice.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-gohdan', later: true, label: 'Gohdan — pictograph DURING the fight (Deluxe box)' }
+            ] },
+          { id: 'c9-d-3', order: 3,
+            text: 'Atop the tower hangs a great bell. Swing the clapper and RING IT — the toll rolls across the whole Great Sea, and a ring of golden light opens on the water below. The King of Red Lions sails you down, down, down... to a place the ocean has been keeping secret. (Next chapter. Oh, next chapter.)',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c9-e', title: 'The bow changes everything (do these now)', collapsedByDefault: true,
+        steps: [
+          { id: 'c9-e-1', order: 1,
+            text: 'FAST TRAVEL, at last: somewhere on the sea (try the squares near Shark Island or Dragon Roost) a roaming CYCLONE hides Cyclos, Zephos’s vengeful brother. Sail in, keep your nerve, and shoot him THREE times with arrows before he flings you across the map. Impressed, he teaches the BALLAD OF GALES — warp between cyclone waypoints all over the sea. On a GameCube ocean with no Swift Sail, this song is worth more than any treasure; warp first, then fine-tune with the Wind’s Requiem.',
+            callouts: [
+              { type: 'song', refId: 'song-ballad', label: 'Ballad of Gales — shoot Cyclos 3× with arrows' },
+              { type: 'figurine', refId: 'fig-cyclos', later: true, label: 'Cyclos — snap him mid-tantrum' }
+            ] },
+          { id: 'c9-e-2', order: 2,
+            text: 'First warp destination: MOTHER & CHILD ISLES, the sealed twin rings only the Ballad can enter. Inside waits the QUEEN OF FAIRIES, who upgrades your bow with FIRE AND ICE ARROWS — a volcano and a glacier are in your future, and now you outrank both.',
+            callouts: [
+              { type: 'fairy', refId: 'fairy-queen', label: 'Fairy Queen — Fire & Ice Arrows' },
+              { type: 'figurine', refId: 'fig-fairyqueen', later: true, label: 'Queen of Fairies — gallery subject' }
+            ] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch10', number: 10, title: 'Hyrule Castle & the Forsaken Fortress', bossName: 'Helmaroc King',
