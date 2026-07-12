@@ -455,8 +455,78 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch07', number: 7, title: 'Forbidden Woods', bossName: 'Kalle Demos',
-    intro: 'Across the water from Forest Haven, a woods gone wrong: thorned vines, carnivorous plants, and a missing Korok named Makar.',
-    sections: []
+    intro: 'Forest Haven’s dark twin: a hollow tree gone feral, where the flora does the hunting and a very small violinist is very deep in trouble. The second dungeon trades lava for overgrowth — and sends you home with one of the game’s best tools.',
+    sections: [
+      {
+        id: 'c7-a', title: 'Into the thorns', collapsedByDefault: false,
+        steps: [
+          { id: 'c7-a-1', order: 1,
+            text: 'The woods’ grammar is all plants: giant flowers serve as platforms and lifts, Boko Babas snap from pods (slash the head, then stomp the seed for a Boko Baba Seed — Hollo trades them for potions), and MORTHS — the spiky burrs — cling to your legs and slow you to a trudge until a spin attack shakes them off. Doors here are sealed by vines; your sword handles the green ones for now.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-morth', later: true, label: 'Morth — gallery subject' },
+              { type: 'figurine', refId: 'fig-peahat', later: true, label: 'Peahat — gallery subject' }
+            ] },
+          { id: 'c7-a-2', order: 2,
+            text: 'Peahats whirl through the air on propeller leaves — a gust from the Deku Leaf knocks them into a helpless tumble. Use the Leaf between the great boughs too: the dungeon loves a gap just too wide to jump. Collect the DUNGEON MAP and COMPASS as you go, and mind the blue thorned vines: nothing you carry yet will cut them. Yet.',
+            callouts: [] },
+          { id: 'c7-a-3', order: 3,
+            text: 'Tingle Tuner in hand? The FORBIDDEN TINGLE STATUE hides somewhere in these woods — ten rupees of Tingle Bomb marks the spot.',
+            callouts: [
+              { type: 'item', refId: 'tingle-forbidden', later: true, label: 'Forbidden Tingle Statue — Tingle Bomb the hidden spot' }
+            ] }
+        ]
+      },
+      {
+        id: 'c7-b', title: 'The Boomerang', collapsedByDefault: false,
+        steps: [
+          { id: 'c7-b-1', order: 1,
+            text: 'In a great flower-walled arena, the dungeon’s bruiser descends: a WINGED MOTHULA. Ground it — a Deku Leaf gust mid-flight works wonders — then hack at it while it’s down, and don’t let the Morths it sheds pile onto you. Its treasure is the BOOMERANG.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-wingedmothula', later: true, label: 'Winged Mothula — gallery subject' },
+              { type: 'figurine', refId: 'fig-mothula', later: true, label: 'Mothula (grounded) — also skulking in these woods' }
+            ] },
+          { id: 'c7-b-2', order: 2,
+            text: 'The Boomerang is the woods’ skeleton key: hold the button to paint up to FIVE targets, release, and watch it visit them all in order. It severs the blue thorned vines, snips the stems holding puzzle platforms and doors shut, stuns enemies, and fetches faraway pickups. Half this dungeon’s remaining locks are really boomerang puzzles — think “what five things need cutting?”',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c7-c', title: 'Boss: {{spoiler:Kalle Demos}}', collapsedByDefault: false,
+        steps: [
+          { id: 'c7-c-1', order: 1,
+            text: 'Boss key in hand, drop into the bloom at the bottom of the woods. {{spoiler:Makar has been swallowed whole by KALLE DEMOS, a monstrous orchid that hoists itself to the ceiling on a crown of tendrils.}} The Boomerang was made for this: target as many anchoring tendrils as it allows and cut, cut, cut until the whole horror crashes down.',
+            callouts: [] },
+          { id: 'c7-c-2', order: 2,
+            text: 'Down, its petals peel back to expose the soft core — slash it savagely before the tendrils re-anchor (it WILL climb back up; resume snipping without panic). Two or three knockdowns end it. Collect the HEART CONTAINER, and catch the reunion: {{spoiler:Makar, shaken and apologetic, promises the Deku Tree he’ll never fly over the woods again}}. Gallery reminder: like all bosses, this one can’t be re-photographed — Second Quest handles it.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-kalledemos', later: true, label: 'Kalle Demos — figurine via Second Quest color picto' }
+            ] }
+        ]
+      },
+      {
+        id: 'c7-d', title: 'The Korok ceremony', collapsedByDefault: false,
+        steps: [
+          { id: 'c7-d-1', order: 1,
+            text: 'Back in Forest Haven, the ceremony finally begins: Makar plays, the Koroks dance, and the Great Deku Tree produces {{spoiler:FARORE’S PEARL}} — two of three. Then the Koroks scatter across the whole Great Sea to plant the year’s seeds, and a new quest quietly goes live: EIGHT of those saplings will struggle, and only Forest Water delivered within 20 minutes of bottling can save them all.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-witheredtrees', label: 'The eight withered trees — now live (route first, scoop second!)' },
+              { type: 'figurine', refId: 'fig-makar', later: true, label: 'Makar — pictograph the little maestro' }
+            ] },
+          { id: 'c7-d-2', order: 2,
+            text: 'Completionist’s synergy: each scattered Korok stands watch by his sapling, which makes the watering run a PHOTO SAFARI too — bring the Deluxe Picto Box and collect all eight portraits island by island (Star Island, Cliff Plateau, Shark Island, Greatfish, Needle Rock, Private Oasis, Eastern Fairy, Mother & Child). Two birds, one very efficient boat.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-rown', later: true, label: 'Rown — by his sapling' },
+              { type: 'figurine', refId: 'fig-irch', later: true, label: 'Irch — by his sapling' },
+              { type: 'figurine', refId: 'fig-aldo', later: true, label: 'Aldo — by his sapling' },
+              { type: 'figurine', refId: 'fig-oakin', later: true, label: 'Oakin — by his sapling' },
+              { type: 'figurine', refId: 'fig-drona', later: true, label: 'Drona — by his sapling' },
+              { type: 'figurine', refId: 'fig-linder', later: true, label: 'Linder — by his sapling' },
+              { type: 'figurine', refId: 'fig-elma', later: true, label: 'Elma — by his sapling' },
+              { type: 'figurine', refId: 'fig-olivio', later: true, label: 'Olivio — by his sapling' }
+            ] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch08', number: 8, title: 'Nayru’s Pearl', bossName: null,
