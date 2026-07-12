@@ -13,6 +13,17 @@
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+    /* Apply the saved theme BEFORE first paint so light-mode users never see
+       a flash of the dark default. Mirrors js/store.js key + default. */
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('wwc.settings.v1') || '{}');
+        var dark = s.darkMode === undefined ? true : s.darkMode;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) { /* keep the dark default already on <html> */ }
+    })();
+  </script>
 </head>
 <body>
   <!-- Decorative ocean waves along the bottom of the screen -->

@@ -564,3 +564,62 @@ textarea.io-area {
 .muted { color: var(--text-dim); font-size: 0.85rem; }
 .center { text-align: center; }
 hr.sep { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+/* --------------------------------------------------------------------------
+   Accessibility
+   -------------------------------------------------------------------------- */
+
+/* A clear keyboard focus ring on every interactive control (mouse/touch taps
+   don't trigger :focus-visible, so this stays out of the way until needed). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+.spoiler:focus-visible {
+  outline: 3px solid var(--gold-bright);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Respect users who ask for less motion: keep state changes instant. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Checklist "hide found" filter + category completion flourish
+   -------------------------------------------------------------------------- */
+.list-tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 4px 0 10px;
+}
+.list-tools label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.check-list.hide-found .check-item.done { display: none; }
+
+.all-done-banner {
+  text-align: center;
+  color: #4a3607;
+  background: var(--gold-bright);
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+html[data-theme="dark"] .all-done-banner { color: #4a3607; }

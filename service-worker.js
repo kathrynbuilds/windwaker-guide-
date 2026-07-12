@@ -6,7 +6,7 @@
    fresh cache, and old caches are deleted on activate.
    ========================================================================== */
 
-var CACHE_VERSION = 'wwc-v14';
+var CACHE_VERSION = 'wwc-v15';
 
 var PRECACHE_URLS = [
   './',

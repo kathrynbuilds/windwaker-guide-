@@ -228,7 +228,10 @@ var DEDICATION_SUB = 'Your complete guide and 100% tracker for The Wind Waker on
         '<div class="overall-pct">' + pct + '%</div>' +
         '<div class="overall-sub">' + o.done + ' of ' + o.total + ' trackable things found across the Great Sea</div>' +
         progressBar(o.done, o.total, '') +
-      '</div>';
+      '</div>' +
+      (o.total > 0 && o.done >= o.total
+        ? '<div class="all-done-banner">100%! Every secret of the Great Sea is yours. Well sailed, hero. 💛</div>'
+        : '');
 
     if (lastCh) {
       html += '<a class="card" href="#/chapter/' + lastCh.number + '">' +
@@ -407,13 +410,32 @@ var DEDICATION_SUB = 'Your complete guide and 100% tracker for The Wind Waker on
     var items = categoryItems(catId);
     var s = categoryStats(catId);
 
+    var hideFound = WWC_STORE.getSetting('hideFound') === true;
+
     var html = '<h1>' + esc(cat.name) + '</h1>';
     if (cat.blurb) html += '<p class="lead">' + esc(cat.blurb) + '</p>';
     html += progressBar(s.done, s.total, 'Found');
 
+    /* Celebrate a fully-cleared category. */
+    if (s.total > 0 && s.done >= s.total) {
+      html += '<div class="all-done-banner">All ' + s.total + ' found — this collection is complete! ⚓</div>';
+    }
+
+    /* "Hide found" filter — real relief on the 134-figurine list. */
+    html += '<div class="list-tools">' +
+      '<label><input type="checkbox" class="big-check" id="hide-found"' + (hideFound ? ' checked' : '') + ' style="width:22px;height:22px"> Hide found</label>' +
+    '</div>';
+
+    /* Build the visible set first so empty group headers never show. */
+    var visible = hideFound ? items.filter(function (c) { return !WWC_STORE.isChecked(c.id); }) : items;
+
+    html += '<div class="card check-list">';
+    if (!visible.length) {
+      html += '<p class="muted center" style="padding:10px 0">' +
+        (hideFound && s.done ? 'Everything here is found. Nice sailing! ⛵' : 'Nothing to show yet.') + '</p>';
+    }
     var lastGroup = null;
-    html += '<div class="card">';
-    items.forEach(function (c) {
+    visible.forEach(function (c) {
       if (c.group && c.group !== lastGroup) {
         html += '<h2>' + esc(c.group) + '</h2>';
         lastGroup = c.group;
@@ -434,6 +456,13 @@ var DEDICATION_SUB = 'Your complete guide and 100% tracker for The Wind Waker on
     });
     html += '</div>';
     view.innerHTML = html;
+
+    var hideBox = document.getElementById('hide-found');
+    hideBox.addEventListener('change', function () {
+      WWC_STORE.setSettingQuiet('hideFound', hideBox.checked);
+      renderChecklist(catId);
+    });
+
     wireChecks();
     wireSpoilers();
     wireCalloutExpand();
