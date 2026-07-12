@@ -862,8 +862,59 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch12', number: 12, title: 'Wind Temple', bossName: 'Molgera',
-    intro: 'Makar’s song opens Gale Isle, where wind itself is the puzzle — springs, fans, and a burrowing terror under the sand.',
-    sections: []
+    intro: 'One sage down, one to go — and this one plays the violin. The second temple hides behind a gale so fierce it blows you off your feet, and inside, wind is both the obstacle and the answer. Bring the Iron Boots, and bring a little Korok who’s braver than he looks.',
+    sections: [
+      {
+        id: 'c12-a', title: 'Gale Isle & the Wind God’s Aria', collapsedByDefault: false,
+        steps: [
+          { id: 'c12-a-1', order: 1,
+            text: 'Sail to GALE ISLE in the far northwest. A ferocious wind screams out of the cave mouth, strong enough to fling you back into the sea — until you equip the IRON BOOTS and simply walk into the teeth of it, cape snapping, head down. Inside, a stone slab teaches the WIND GOD’S ARIA, the Wind Temple’s key.',
+            callouts: [
+              { type: 'song', refId: 'song-windaria', label: 'Wind God’s Aria — learned on Gale Isle' }
+            ] },
+          { id: 'c12-a-2', order: 2,
+            text: 'You know the rhythm from the Earth Temple: this song needs a sage to sing it with you. That sage is MAKAR, the little Korok violinist you rescued from the Forbidden Woods. Fly to Forest Haven, find him among the Koroks, and teach him the Aria — he’s astonished to learn he’s the Wind Sage, and just brave enough to come along.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-makar', label: 'Makar — pictograph the Wind Sage' }
+            ] }
+        ]
+      },
+      {
+        id: 'c12-b', title: 'The Wind Temple with Makar', collapsedByDefault: false,
+        steps: [
+          { id: 'c12-b-1', order: 1,
+            text: 'Bring Makar back to Gale Isle and descend together. This is the mirror of the Earth Temple: use the COMMAND MELODY to take control of Makar, who can FLY short distances on the wind (perfect for crossing gaps you can’t) and, crucially, PLANT SEEDS in patches of soil to sprout climbable vines and bramble platforms. Half the temple is “where does Makar need to stand, and what should he plant?”',
+            callouts: [
+              { type: 'figurine', refId: 'fig-wizzrobe', later: true, label: 'Wizzrobe — gallery subject (they summon monsters here)' },
+              { type: 'figurine', refId: 'fig-peahat', later: true, label: 'Peahat — gallery subject' }
+            ] },
+          { id: 'c12-b-2', order: 2,
+            text: 'The dungeon’s treasure is the HOOKSHOT — fire it to grapple distant chests and pull them (and yourself) across chasms, stun enemies, and, yes, yank Makar to you when he’s stranded. Big vertical rooms with fan-driven updrafts and Wizzrobes summoning reinforcements fill the back half; the Hookshot turns their high ledges into shortcuts. Watch for Floormasters and clingy Morths, too.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-floormaster', later: true, label: 'Floormaster — gallery subject' },
+              { type: 'figurine', refId: 'fig-morth', later: true, label: 'Morth — gallery subject' }
+            ] },
+          { id: 'c12-b-3', order: 3,
+            text: 'Tingle Tuner riders: the WIND TINGLE STATUE — the last of the five — hides in this temple. Ten rupees of Tingle Bomb on the sweet spot reveals it, completing the Tingle Statues checklist. Grab the Dungeon Map, Compass, and Big Key on your way to the boss door.',
+            callouts: [
+              { type: 'item', refId: 'tingle-wind', later: true, label: 'Wind Tingle Statue — the 5th and final one' }
+            ] }
+        ]
+      },
+      {
+        id: 'c12-c', title: 'Boss: {{spoiler:Molgera}}', collapsedByDefault: false,
+        steps: [
+          { id: 'c12-c-1', order: 1,
+            text: 'The boss room is a pit of sand. {{spoiler:MOLGERA, a giant burrowing sand-wyrm,}} erupts and dives, tracking you beneath the surface (watch the sand ripple toward you and sidestep the lunge). Its weak point is its own tongue: when it rears up to strike, HOOKSHOT the tongue to yank the whole beast out of the sand, helpless — then rush in with the Master Sword.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-molgera', label: 'Molgera — pictograph during the fight!' }
+            ] },
+          { id: 'c12-c-2', order: 2,
+            text: 'Hurt, {{spoiler:Molgera}} spawns little burrowing larvae that mob you — Hookshot or slash them fast, then re-hook the parent’s tongue whenever it lunges. A few good yank-and-slash cycles finish it. Take the HEART CONTAINER, and the payoff you’ve been building toward: {{spoiler:Makar takes up his prayer in the temple, and the Master Sword blazes back to FULL power — the blade of evil’s bane, whole again.}} Both sages restored. Now there’s only one place left to sail.',
+            callouts: [] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch13', number: 13, title: 'The Triforce', bossName: null,
