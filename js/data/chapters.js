@@ -1085,7 +1085,65 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch14', number: 14, title: 'Ganon’s Tower', bossName: 'Ganondorf',
-    intro: 'Beneath the waves, an old kingdom holds its breath. Climb the tower, face every trial the game can restate, and finish the story on the roof of a drowned world.',
-    sections: []
+    intro: 'The Triforce of Courage restored, the Master Sword whole, one road left. Ganon’s Tower rises where the sea was split — a gauntlet that makes you prove you remember everything the journey taught, then asks for a little more. Stock up on potions and arrows, save on the doorstep, and take a breath. This is the end.',
+    sections: [
+      {
+        id: 'c14-a', title: 'Reaching the tower', collapsedByDefault: false,
+        steps: [
+          { id: 'c14-a-1', order: 1,
+            text: 'Last errands first. Top off Fire and Ice Arrows, buy or brew a couple of red and blue potions (a Fairy in a bottle is a free second life), and — if you never did — bring Orca ten Knight’s Crests for the HURRICANE SPIN, which trivializes the tower’s knights. When you’re ready, sail back to the sunken kingdom and step through the tower’s door.',
+            callouts: [
+              { type: 'upgrade', refId: 'up-hurricane', later: true, label: 'Hurricane Spin — 10 Knight’s Crests to Orca (do it before the tower!)' }
+            ] }
+        ]
+      },
+      {
+        id: 'c14-b', title: 'The four trials', collapsedByDefault: false,
+        steps: [
+          { id: 'c14-b-1', order: 1,
+            text: 'The entrance hall has four doors, each a miniature of a dungeon you’ve beaten — and each guards a switch. You may do them in any order; all four must fall to open the way up. The tower hands back your whole toolkit, so lead with the right item.',
+            callouts: [] },
+          { id: 'c14-b-2', order: 2,
+            text: 'FOREST (Forbidden Woods): a Boomerang-and-Deku-Leaf room of carnivorous plants and platforms — cut the tethers, glide the gaps. EARTH (Earth Temple): darkness and mirrors — use the Mirror Shield to walk light onto the sun-seals, with ReDeads and Poes for company. WIND (Wind Temple): fans, updrafts and Hookshot targets — ride the wind to the switch. WATER/ICE (a frozen twist): freeze platforms and cross with careful footing. Clear all four and a great stair opens overhead.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-redead', later: true, label: 'ReDead — another chance in the Earth trial' },
+              { type: 'figurine', refId: 'fig-wizzrobe', later: true, label: 'Wizzrobe — the trials are full of them' }
+            ] }
+        ]
+      },
+      {
+        id: 'c14-c', title: 'The climb & the mirror maze', collapsedByDefault: false,
+        steps: [
+          { id: 'c14-c-1', order: 1,
+            text: 'The upper tower is a knight’s parade. MIGHTY DARKNUTS — caped, helmeted, and genuinely dangerous — hold the stairways. This is the Hurricane Spin’s moment; otherwise, slice the cape strings off their backs, break the armor piece by piece, and finish the bare knight. They shed Knight’s Crests too, if you still need Orca’s. Snap a pictograph mid-fight for the gallery — the endgame is your last easy shot at the Mighty Darknut.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-mightydarknut', later: true, label: 'Mighty Darknut — MISSABLE-ish: photograph in the tower gauntlet' }
+            ] },
+          { id: 'c14-c-2', order: 2,
+            text: 'Near the top, a mirror-maze puzzle: {{spoiler:in the mirrors you see Princess Zelda held in the tower above}}. Guide the reflected light and thread the passages to break the seal. Then the room you’ve been climbing toward — and the fight the whole game has pointed at.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c14-d', title: 'Boss: {{spoiler:Puppet Ganon, then Ganondorf}}', collapsedByDefault: false,
+        steps: [
+          { id: 'c14-d-1', order: 1,
+            text: 'FIRST — {{spoiler:PUPPET GANON}}, a colossal marionette on glowing strings, in three forms. As the beast, target the blue core swinging beneath it — Boomerang or arrow the strings to drop it, then strike. As the spider, it skitters on the ceiling and walls; light arrows to the core, and mind the drop. As the great serpent, it coils through the dark — arrow the segmented body and the tail-tip core. Keep the Master Sword and Light Arrows busy and it falls.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-puppetganon', later: true, label: 'Puppet Ganon — pictograph during the fight!' }
+            ] },
+          { id: 'c14-d-2', order: 2,
+            text: 'Climb the final ladder to the tower’s roof, under a sky the flood never reached. {{spoiler:Ganondorf waits with Zelda, and the last duel begins — swords first (parry his strikes; the counter is your friend), and then, the game’s quiet masterstroke: Zelda wakes and fires Light Arrows to stun him, opening the moment for the killing blow. Drive the Master Sword home and hold on for the ending the Great Sea has been sailing toward all along.}}',
+            callouts: [
+              { type: 'figurine', refId: 'fig-ganondorf', later: true, label: 'Ganondorf — pictograph the final battle (Second Quest for the set)' }
+            ] },
+          { id: 'c14-d-3', order: 3,
+            text: 'One hundred percent, hero. If the dashboard reads all bars full and the figurine gallery is complete, Carlov gives you the run of the Nintendo Gallery and a well-earned pat on the back — and you’ve seen every secret the GameCube original holds. Thank you for sailing the whole sea. Happy adventuring, Austin. 💛',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-gallery', later: true, label: 'Nintendo Gallery — 134/134 for true 100%' }
+            ] }
+        ]
+      }
+    ]
   }
 ];
