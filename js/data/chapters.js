@@ -388,8 +388,70 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch06', number: 6, title: 'Forest Haven', bossName: null,
-    intro: 'A sanctuary tree rises from a ring of cliffs, home of the Great Deku Tree and the leaf-masked Koroks — and the source of the Deku Leaf.',
-    sections: []
+    intro: 'Far to the south, a ring of stone cradles a tree the size of a legend. Forest Haven is the gentlest place on the Great Sea — and, for a 100% run, one of the most important: the Deku Leaf, the Forest Firefly, and the Nintendo Gallery all live here. Budget a long, happy visit.',
+    sections: [
+      {
+        id: 'c6-a', title: 'Landfall at the singing forest', collapsedByDefault: false,
+        steps: [
+          { id: 'c6-a-1', order: 1,
+            text: 'The outside is less gentle than the inside: Octoroks lurk in the moat waters (shield-bounce their rocks back) and Boko Babas snap along the climb. Work up and around the roots to the cave entrance and follow it into the hollow heart of the tree — waterfalls, lily pads, and the deep, slow voice of the GREAT DEKU TREE.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-octorok', later: true, label: 'Octorok — gallery subject' },
+              { type: 'figurine', refId: 'fig-bokobaba', later: true, label: 'Boko Baba — gallery subject' }
+            ] },
+          { id: 'c6-a-2', order: 2,
+            text: 'First, pest control: ChuChus swarm the great tree’s bark the moment you approach. Slash them off (bouncing on the lily pads with rolls works too) and the Deku Tree can finally speak. The news is mixed: he’ll gladly grant {{spoiler:Farore’s Pearl}} at the Koroks’ annual ceremony — but the ceremony can’t start, because little MAKAR flew too close to the Forbidden Woods and fell in.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-dekutree', later: true, label: 'Great Deku Tree — gallery subject (what a portrait!)' }
+            ] }
+        ]
+      },
+      {
+        id: 'c6-b', title: 'The Deku Leaf', collapsedByDefault: false,
+        steps: [
+          { id: 'c6-b-1', order: 1,
+            text: 'To reach the Forbidden Woods you’ll need wings of your own. Inside Forest Haven, hop into the BABA BUDS — the friendly pink pods — and let them spring you from ledge to ledge, spiraling up the inside of the tree. At the crown, pluck your prize off the branch: the DEKU LEAF.',
+            callouts: [] },
+          { id: 'c6-b-2', order: 2,
+            text: 'The Deku Leaf is two items in one: on the ground it fans a gust (flip switches, shove things, annoy pigs); in the air it’s a glider that drinks from your MAGIC METER — watch the gauge, and remember a certain Great Fairy doubles it later. First flight assignment: from Forest Haven’s heights, ride the updrafts around the OUTSIDE of the tree to the lonely ledge holding a Piece of Heart.',
+            callouts: [
+              { type: 'heart', refId: 'hp-18', label: 'Piece of Heart — glide to the outer ledge' }
+            ] }
+        ]
+      },
+      {
+        id: 'c6-c', title: 'A forest of errands — don’t sail off yet', collapsedByDefault: false,
+        steps: [
+          { id: 'c6-c-1', order: 1,
+            text: 'THE BIG ONE: near Hollo’s potion shop inside the haven drift motes of living light — FOREST FIREFLIES. Swing an empty bottle to catch one. This little glow is Lenzo’s final requirement: ferry it back to Windfall (any time) and he upgrades your camera to the DELUXE PICTO BOX — full color, and the key that unlocks the entire 134-figurine gallery quest. The instant you have it, remember your standing appointment: Kogoli on Dragon Roost, before he wanders off for good.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-pictobox', label: 'Deluxe Picto Box — firefly to Lenzo (after his 3 assignments)' }
+            ] },
+          { id: 'c6-c-2', order: 2,
+            text: 'Just off Forest Haven’s flank sits a tiny islet with a door: the NINTENDO GALLERY. Glide over and meet Carlov, master sculptor, and Manny, his one-man fan club. The deal, GameCube terms: show Carlov a clear, full-frame COLOR pictograph and he’ll carve that subject’s figurine — but only ONE per day. The Song of Passing turns his “come back tomorrow” into a ten-second wait, which over 134 figurines will save you literal hours. This checklist’s longest quest starts here.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-gallery', label: 'Nintendo Gallery — the 134-figurine quest begins' },
+              { type: 'figurine', refId: 'fig-carlov', later: true, label: 'Carlov — yes, he poses' },
+              { type: 'figurine', refId: 'fig-manny', later: true, label: 'Manny — the superfan' }
+            ] },
+          { id: 'c6-c-3', order: 3,
+            text: 'Two forest notes for later: bottle some FOREST WATER before a future trip — after the Korok ceremony, eight saplings will wither across the sea, and watering all eight within the water’s 20-minute freshness timer earns a Piece of Heart (the GameCube timer is tight; plan the route before scooping). And a rare Blue ChuChu haunts the haven — see the checklist when hunting jelly for Doc Bandam’s best potion.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-witheredtrees', later: true, label: 'Withered trees — after the ceremony (20-minute timer!)' },
+              { type: 'heart', refId: 'hp-19', later: true, label: 'Piece of Heart — all eight saplings watered' },
+              { type: 'secret', refId: 'chu-18', later: true, label: 'Blue ChuChu — at Forest Haven' }
+            ] }
+        ]
+      },
+      {
+        id: 'c6-d', title: 'On to the Forbidden Woods', collapsedByDefault: false,
+        steps: [
+          { id: 'c6-d-1', order: 1,
+            text: 'The Forbidden Woods loom across the water to the west of the haven — all thorns where this place is all blossom. Climb back to Forest Haven’s upper exit, aim the wind, and Deku-Leaf across the gap, riding the cyclone updrafts between the islets like stepping stones. Watch the magic meter on the long hops; a dunk means a swim and a re-climb. Makar is waiting, and he’s been brave for long enough.',
+            callouts: [] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch07', number: 7, title: 'Forbidden Woods', bossName: 'Kalle Demos',
