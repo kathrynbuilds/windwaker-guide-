@@ -780,8 +780,85 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch11', number: 11, title: 'Earth Temple', bossName: 'Jalhalla',
-    intro: 'The Master Sword needs its power restored. With Medli and the Earth God’s Lyric, descend into a temple of shadow and mirrored light beneath Headstone Island.',
-    sections: []
+    intro: '{{spoiler:The Master Sword is powerless — its edge dulled the moment Ganondorf touched it.}} To wake it you must restore the two temple sages, and that means learning to conduct a duet, mastering reflected light, and trusting a small, brave Rito with your life. First, though, two islands owe you a pair of boots and a stronger grip.',
+    sections: [
+      {
+        id: 'c11-a', title: 'Fire and ice (get these first)', collapsedByDefault: false,
+        steps: [
+          { id: 'c11-a-1', order: 1,
+            text: 'The temples demand two items you don’t have. Start at FIRE MOUNTAIN: fire an ICE ARROW into the erupting lava spout to freeze a platform, land, and dash into the cave before the timer thaws it. Inside wait the POWER BRACELETS — strength to lift heavy stones (and heavier statue-heads) all game long.',
+            callouts: [
+              { type: 'secret', refId: 'cave-firemountain', label: 'Secret cave — Fire Mountain (Ice Arrow the spout)' }
+            ] },
+          { id: 'c11-a-2', order: 2,
+            text: 'Then ICE RING ISLE, its opposite: a FIRE ARROW thaws the frozen entrance. Inside is a slippery ice-slide puzzle — mind your footing and beat the re-freeze timer to claim the IRON BOOTS, which anchor you against gales and let you cross Gale Isle later. On the isle’s outer ledge, grab Treasure Chart 36 while you’re here.',
+            callouts: [
+              { type: 'secret', refId: 'cave-icering', label: 'Secret cave — Ice Ring Isle (Fire Arrow the entrance)' },
+              { type: 'treasureChart', refId: 'tc-36', label: 'Treasure Chart 36 — Ice Ring Isle outer ledge' }
+            ] }
+        ]
+      },
+      {
+        id: 'c11-b', title: 'Headstone Island & the Earth God’s Lyric', collapsedByDefault: false,
+        steps: [
+          { id: 'c11-b-1', order: 1,
+            text: 'Sail to HEADSTONE ISLAND in the far southwest. At the foot of its great stone marker, use the Power Bracelets to heave the heavy slab aside, revealing the entrance below — and a stone tablet that teaches the EARTH GOD’S LYRIC. Conduct it and a vision stirs: {{spoiler:the ghost of Laruto, the murdered Zora sage, who reveals that her successor is Medli}}.',
+            callouts: [
+              { type: 'song', refId: 'song-earthlyric', label: 'Earth God’s Lyric — the temple’s key' },
+              { type: 'figurine', refId: 'fig-laruto', later: true, label: 'Laruto — pictograph her spirit while she appears' }
+            ] },
+          { id: 'c11-b-2', order: 2,
+            text: 'Fly back to Dragon Roost, find Medli, and teach her the Lyric — she realizes her true calling as the Earth Sage and asks to come with you. Return to Headstone Island together; her harp and your baton are the temple’s twin keys. Two side-catches worth grabbing in these waters: toss a Hyoi Pear to steer a seagull to Headstone’s peak for a Piece of Heart, and clear the nearby submarine for Treasure Chart 14.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-medli', label: 'Medli — pictograph the Earth Sage' },
+              { type: 'heart', refId: 'hp-34', label: 'Piece of Heart — Headstone peak, via Hyoi Pear seagull' },
+              { type: 'submarine', refId: 'sub-headstone', label: 'Submarine — near Headstone Island (Treasure Chart 14)' },
+              { type: 'treasureChart', refId: 'tc-14', label: 'Treasure Chart 14 — from that submarine' }
+            ] }
+        ]
+      },
+      {
+        id: 'c11-c', title: 'The Earth Temple with Medli', collapsedByDefault: false,
+        steps: [
+          { id: 'c11-c-1', order: 1,
+            text: 'This is a partner dungeon: use the COMMAND MELODY to take control of Medli, walk her to switches and far ledges, and — crucially — aim the beam of light her mirrored harp reflects. Many rooms are solved by bouncing sunlight onto crystal switches or onto the sun-shaped seals barring the doors. When you’re not steering her, she rides your throws and waits where you park her, so plan the light angles before you commit.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-poe', later: true, label: 'Poe — gallery subject' },
+              { type: 'figurine', refId: 'fig-stalfos', later: true, label: 'Stalfos — gallery subject' }
+            ] },
+          { id: 'c11-c-2', order: 2,
+            text: 'The temple is a haunted house: ReDeads freeze you with their shriek (break free by mashing, or drop them with an arrow first), Floormasters drop from the ceiling to snatch you back to the entrance, and Dark ChuChus petrify at a touch of light. Midway, a STALFOS bruiser guards the MIRROR SHIELD — your own portable sunbeam, which removes Medli from most light-aiming duties and lets you press deeper alone.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-redead', later: true, label: 'ReDead — gallery subject (brace yourself)' },
+              { type: 'figurine', refId: 'fig-floormaster', later: true, label: 'Floormaster — gallery subject' },
+              { type: 'figurine', refId: 'fig-darkchuchu', later: true, label: 'Dark ChuChu — petrifies in light' }
+            ] },
+          { id: 'c11-c-3', order: 3,
+            text: 'Tingle Tuner riders: the EARTH TINGLE STATUE hides somewhere in the temple — ten rupees of Tingle Bomb marks it. Grab the Dungeon Map, Compass, and Big Key as you reflect your way down to the boss door.',
+            callouts: [
+              { type: 'item', refId: 'tingle-earth', later: true, label: 'Earth Tingle Statue — Tingle Bomb the hidden spot' }
+            ] }
+        ]
+      },
+      {
+        id: 'c11-d', title: 'Boss: {{spoiler:Jalhalla}}', collapsedByDefault: false,
+        steps: [
+          { id: 'c11-d-1', order: 1,
+            text: 'The boss chamber is pitch dark but for a single shaft of sunlight in the center. {{spoiler:JALHALLA, an enormous Poe,}} is immune to your sword — until you catch its reflection. Stand in the beam (or aim the Mirror Shield) to focus light onto the monster; caught in the glare it turns SOLID and shrinks. Now grab it with the Power Bracelets and HURL it into the spiked walls.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-jalhalla', label: 'Jalhalla — pictograph during the fight!' }
+            ] },
+          { id: 'c11-d-2', order: 2,
+            text: 'Shattered, {{spoiler:Jalhalla}} bursts into fifteen ordinary Poes that scatter and swarm — cut them all down (the Mirror Shield’s glare stuns clusters) to finish for good. Claim the HEART CONTAINER. Then the quiet payoff: {{spoiler:Medli takes her place in the temple to pray, and half the Master Sword’s power returns.}} One sage restored; one to go, on the wind.',
+            callouts: [] },
+          { id: 'c11-d-3', order: 3,
+            text: 'Windfall bookkeeping: if you’ve been feeding Mrs. Marie Joy Pendants, this is around when the HERO’S CHARM becomes available — a further donation past the 20-pendant Cabana Deed earns the charm that shows enemy health bars. (Commonly cited as 40 more pendants; verify the exact count in game.) Keep pocketing every golden butterfly.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-heroscharm', later: true, label: 'Hero’s Charm — more Joy Pendants to Mrs. Marie' }
+            ] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch12', number: 12, title: 'Wind Temple', bossName: 'Molgera',
