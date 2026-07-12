@@ -685,8 +685,98 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch10', number: 10, title: 'Hyrule Castle & the Forsaken Fortress', bossName: 'Helmaroc King',
-    intro: 'What waits beneath the Great Sea changes everything. Then — back to where it all began, to settle accounts with a giant bird.',
-    sections: []
+    intro: 'The bell tolls, the sea opens, and the game plays its greatest card. Then it hands you a very large hammer and sends you back to where everything started — to finish what a barrel and a catapult began. If you photograph one person before this chapter, make it Tetra.',
+    sections: [
+      {
+        id: 'c10-a', title: 'Beneath the waves', collapsedByDefault: false,
+        steps: [
+          { id: 'c10-a-1', order: 1,
+            text: 'Descend through the ring of golden light and step out into {{spoiler:HYRULE — the old kingdom itself, sealed beneath the Great Sea, drained of color and frozen in a single moment}}. Nothing moves. Even the birds hang in the air. Walk the causeway to the castle and take your time; the game certainly intends you to.',
+            callouts: [] },
+          { id: 'c10-a-2', order: 2,
+            text: 'In the castle’s grand hall, a statue guards a secret: the floor mosaic is a sliding-block puzzle. Push the three great blocks so their faces complete the TRIFORCE pattern — the statue slides aside, opening the stair down into the light.',
+            callouts: [] },
+          { id: 'c10-a-3', order: 3,
+            text: 'At the bottom of the world, in a shaft of sunlight, waits the blade of evil’s bane. Draw the MASTER SWORD from its pedestal — {{spoiler:and hear the click of the world unpausing. Color floods back. And every frozen Moblin and Darknut in the castle above wakes up mid-swing}}. The way out is through; treat it as a graduation ceremony for everything Orca taught you.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c10-b', title: 'Return to the Forsaken Fortress', collapsedByDefault: false,
+        steps: [
+          { id: 'c10-b-1', order: 1,
+            text: 'Sail for the fortress — no barrels, no catapults, no sneaking. This time the front door works. In the courtyard where the searchlights once cowed you, a cape drifts down from the tower: {{spoiler:PHANTOM GANON}}. Volley his energy balls back with sword swings (a deadly game of tennis), then close in and slash when he crumples. If you own the Deluxe Picto Box, SHOOT A PICTOGRAPH MID-FIGHT — this dance partner keeps limited appointments.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-phantomganon', label: 'Phantom Ganon — pictograph during the fight!' }
+            ] },
+          { id: 'c10-b-2', order: 2,
+            text: 'His parting gift is the SKULL HAMMER — enormous, ridiculous, wonderful. It flattens the pesky stakes you’ve seen all over the sea, cracks stubborn obstacles, and turns Miniblins into a percussion section. Climb the fortress the honest way now, hammer first: Moblins, Miniblins, Bombchus and rats all get in line. Deluxe box in hand? This is THE photo floor for the whole Forsaken Fortress gallery room.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-moblin', label: 'Moblin — pictograph on the climb' },
+              { type: 'figurine', refId: 'fig-miniblin', label: 'Miniblin — pictograph on the climb' },
+              { type: 'figurine', refId: 'fig-bombchu', label: 'Bombchu — pictograph on the climb' },
+              { type: 'figurine', refId: 'fig-rat', label: 'Rat — pictograph on the climb' }
+            ] }
+        ]
+      },
+      {
+        id: 'c10-c', title: 'Boss: {{spoiler:Helmaroc King}}', collapsedByDefault: false,
+        steps: [
+          { id: 'c10-c-1', order: 1,
+            text: 'At the top, the reunion you came for — cut short by rising water and a familiar shriek. Race up the spiral ramp as the flood chases you and {{spoiler:the great bird}} strafes the path; keep moving, shield the gusts, and don’t look down. On the rooftop arena, the real fight: dodge the dive, and when the beak slams down and STICKS in the deck — SKULL HAMMER to the mask. Crack it in stages, then slash the unmasked truth underneath.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-helmaroc', label: 'Helmaroc King — pictograph during the fight!' }
+            ] },
+          { id: 'c10-c-2', order: 2,
+            text: 'Take the HEART CONTAINER and the embrace that’s been fourteen chapters coming: {{spoiler:Aryll, safe, escorted home by pirates with hearts of gold under all that swagger}}. Upstairs, a colder scene — {{spoiler:Ganondorf himself, unbothered by the Master Sword, until Valoo and the Rito burn his tower down around him}}. And then, beneath the sea once more, the game turns its final page early: {{spoiler:Tetra is Princess Zelda — heir to the drowned kingdom — and stays hidden in Hyrule for her own safety}}.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-tetra', later: true, label: 'Tetra — MISSABLE: photograph her BEFORE this reveal (pirate ship / Windfall)' }
+            ] }
+        ]
+      },
+      {
+        id: 'c10-d', title: 'Hammer, fire, and homecomings (optional harvest)', collapsedByDefault: true,
+        steps: [
+          { id: 'c10-d-1', order: 1,
+            text: 'QUIVER RUN: the Skull Hammer opens the last two fairy fountains. At WESTERN FAIRY ISLAND, pound the plunger stake to douse the ring of fire; at THORNED FAIRY ISLAND, hammer the stakes holding the thorns. Visit order sets the sizes — first gives the 60-arrow quiver, second the maximum 99.',
+            callouts: [
+              { type: 'fairy', refId: 'fairy-western', label: 'Great Fairy — Western Fairy Island' },
+              { type: 'upgrade', refId: 'up-quiver1', label: 'Quiver — 60 arrows (first quiver fairy)' },
+              { type: 'fairy', refId: 'fairy-thorned', label: 'Great Fairy — Thorned Fairy Island' },
+              { type: 'upgrade', refId: 'up-quiver2', label: 'Quiver — 99 arrows (second quiver fairy)' }
+            ] },
+          { id: 'c10-d-2', order: 2,
+            text: 'LIGHT THE LIGHTHOUSE: with Fire Arrows in your quiver, ride Windfall’s windmill to the top and shoot the beacon alight. Kreeb, its tiny devoted caretaker, pays in heart; and that night, glide from the windmill down to the small islet below — a chest stands where the light now falls, and it only opens after dark.',
+            callouts: [
+              { type: 'heart', refId: 'hp-13', label: 'Piece of Heart — Kreeb’s gratitude' },
+              { type: 'heart', refId: 'hp-12', label: 'Piece of Heart — the islet chest, at night' }
+            ] },
+          { id: 'c10-d-3', order: 3,
+            text: 'THE GIRLS COME HOME: with the fortress emptied, Mila and Maggie return to Windfall — with reversed fortunes and a fresh crop of quests. Catch MILA sneaking toward Zunari’s safe at night and choose the TOP dialogue option every time; her reform is genuine and her bottle is yours. Upstairs at the auction house, rich MAGGIE wants her letter delivered to a Moblin named Moe (collect his reply from Ilari at the cafe), and her father will trade a Piece of Heart for 20 SKULL NECKLACES — the fortress you just cleared drops them by the handful.',
+            callouts: [
+              { type: 'bottle', refId: 'bottle-mila', label: 'Bottle #4 — Mila’s midnight change of heart' },
+              { type: 'heart', refId: 'hp-10', label: 'Piece of Heart — Maggie & Moe’s letter' },
+              { type: 'heart', refId: 'hp-15', label: 'Piece of Heart — 20 Skull Necklaces' },
+              { type: 'sidequest', refId: 'sq-maggiemoe', label: 'Maggie & Moe — the whole doomed romance' },
+              { type: 'sidequest', refId: 'sq-skullnecklaces', label: 'Skull Necklaces delivered' }
+            ] },
+          { id: 'c10-d-4', order: 4,
+            text: 'GALLERY WINDOW: the rescued families pose for portraits now — and while the pirates linger around Windfall, so does your chance at the crew. Six sailors plus their captain’s empty chair: photograph Gonzo, Senza, Nudge, Niko, Mako and Zuko before their ship sails out of easy reach.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-mila', label: 'Mila — reformed and photogenic' },
+              { type: 'figurine', refId: 'fig-milasfather', label: 'Mila’s Father — humbled' },
+              { type: 'figurine', refId: 'fig-maggie', label: 'Maggie — new money' },
+              { type: 'figurine', refId: 'fig-maggiesfather', label: 'Maggie’s Father — richer and none the wiser' },
+              { type: 'figurine', refId: 'fig-gonzo', label: 'Gonzo — MISSABLE window' },
+              { type: 'figurine', refId: 'fig-senza', label: 'Senza — MISSABLE window' },
+              { type: 'figurine', refId: 'fig-nudge', label: 'Nudge — MISSABLE window' },
+              { type: 'figurine', refId: 'fig-niko', label: 'Niko — MISSABLE window' },
+              { type: 'figurine', refId: 'fig-mako', label: 'Mako — MISSABLE window' },
+              { type: 'figurine', refId: 'fig-zuko', label: 'Zuko — MISSABLE window' }
+            ] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch11', number: 11, title: 'Earth Temple', bossName: 'Jalhalla',
