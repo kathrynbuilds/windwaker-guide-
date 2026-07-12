@@ -320,7 +320,7 @@ var DEDICATION_SUB = 'Your complete guide and 100% tracker for The Wind Waker on
 
       html += '<div class="section" data-sec="' + esc(sec.id) + '">' +
         '<button class="section-head" aria-expanded="' + (!collapsed) + '" data-sec-toggle="' + esc(sec.id) + '">' +
-          '<span>' + esc(sec.title) + '</span>' +
+          '<span>' + renderText(sec.title) + '</span>' +
           '<span class="sec-count">' + secDone + '/' + secIds.length + '</span>' +
           '<svg class="chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>' +
         '</button>' +

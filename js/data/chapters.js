@@ -333,8 +333,58 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch05', number: 5, title: 'Dragon Roost Cavern', bossName: 'Gohma',
-    intro: 'The first true dungeon: a volcano’s smoldering heart of lava flows, wooden platforms, and something enormous coiled beneath Valoo’s perch.',
-    sections: []
+    intro: 'The first true dungeon: the volcano’s smoldering interior, all lava flows, creaking wooden scaffolds and locked doors — with something enormous coiled at the bottom of Valoo’s perch. It’s a gentle teacher as dungeons go, but it saves a real spectacle for the end.',
+    sections: [
+      {
+        id: 'c5-a', title: 'Into the mountain', collapsedByDefault: false,
+        steps: [
+          { id: 'c5-a-1', order: 1,
+            text: 'The cavern’s language is WATER VERSUS LAVA. The big clay water jugs are tools: throw one into a lava pool to harden a temporary platform, or douse a bubbling lava geyser and ride the cooled plug as it rockets you upward. Anything on fire respects a splash. Keese and red ChuChus fill the early rooms; small keys open the way — check side alcoves before spending one.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-keese', later: true, label: 'Keese — gallery subject (color pictos later)' },
+              { type: 'figurine', refId: 'fig-firekeese', later: true, label: 'Fire Keese — they light themselves, obligingly' }
+            ] },
+          { id: 'c5-a-2', order: 2,
+            text: 'Meet the Magtail: a lava centipede with a face only a pictograph could love. Splash it with a water jug (or stun it with a well-timed strike) and it curls into an armored ball — which you can pick up and drop on switches. The dungeon makes you do exactly that more than once; grab the DUNGEON MAP and COMPASS from their chests as you climb so nothing hides from you.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-magtail', later: true, label: 'Magtail — gallery subject' },
+              { type: 'treasureChart', refId: 'tc-39', label: 'Treasure Chart 39 — in a chest along the way; don’t leave without it' }
+            ] },
+          { id: 'c5-a-3', order: 3,
+            text: 'Tingle Tuner traveler? Somewhere in these halls a DRAGON TINGLE STATUE hides — ten rupees of Tingle Bomb on the right spot reveals it. (GBA + link cable only; the statue hunt is the Tuner’s crown jewel.)',
+            callouts: [
+              { type: 'item', refId: 'tingle-dragon', later: true, label: 'Dragon Tingle Statue — Tingle Bomb the hidden spot' }
+            ] }
+        ]
+      },
+      {
+        id: 'c5-b', title: 'The wind-scoured heights', collapsedByDefault: false,
+        steps: [
+          { id: 'c5-b-1', order: 1,
+            text: 'Halfway up, the dungeon steps outside onto cliff-face scaffolding, and the volcano shows you the whole Great Sea as a view. Kargarocs dive at you on the narrow planks — shield-block or let them overshoot, and mind the wind. More Golden Feathers for Hoskit’s pile, silver lining.',
+            callouts: [] },
+          { id: 'c5-b-2', order: 2,
+            text: 'Back inside, a familiar voice: MEDLI, caged by Bokoblin guards who badly underestimated today. Cut them down and free her. In thanks she hands over the dungeon’s treasure — the GRAPPLING HOOK, the attendants’ tool for visiting Valoo. Rope swings across lava, hookable beams everywhere the level design was winking at you — and hold it out toward enemies to snatch spoils like Joy Pendants right off them. Medli flies off to do her part; you climb to do yours.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c5-c', title: 'Boss: {{spoiler:Gohma}}', collapsedByDefault: false,
+        steps: [
+          { id: 'c5-c-1', order: 1,
+            text: 'Collect the BOSS KEY, then take the plunge into the boss chamber, where the source of Valoo’s agony scuttles out of the lava: {{spoiler:Gohma, an armored arthropod the size of a house — she has been gnawing the poor dragon’s tail}}. Phase one ignores your sword entirely: grapple {{spoiler:Valoo’s tail}} where it hangs through the ceiling and swing — the collapsing rock crashes down on the boss. Land the drop THREE times and the armor shatters.',
+            callouts: [] },
+          { id: 'c5-c-2', order: 2,
+            text: 'Phase two: the naked eye. L-target and throw the Grappling Hook at {{spoiler:Gohma’s eye}} to yank it within reach, then slash for all you’re worth. Repeat the pull-and-pummel until the fight ends the way all good first bosses do: dramatically, in slow motion. Collect the HEART CONTAINER (a full fourth heart!) before the exit whisks you out. Gallery note: bosses can never be re-photographed, and your Picto Box is still black-and-white — early boss figurines are Second Quest business (the cleared-game replay keeps the Deluxe Picto Box), so fight guilt-free today.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-gohma', later: true, label: 'Gohma — figurine via Second Quest color picto' }
+            ] },
+          { id: 'c5-c-3', order: 3,
+            text: 'Outside, the mountain breathes easy: Valoo hums contentedly, and {{spoiler:Prince Komali — witnessing actual heroism — finds his spine and hands you DIN’S PEARL}}, the first of three. Medli takes up her calling as Valoo’s attendant in earnest. One pearl down. The King of Red Lions suggests a forest far to the south. Set the wind and sail — next stop, Forest Haven.',
+            callouts: [] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch06', number: 6, title: 'Forest Haven', bossName: null,
