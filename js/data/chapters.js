@@ -74,10 +74,9 @@ WWC_DATA.chapters = [
               { type: 'heart', refId: 'hp-03', later: true, label: 'Piece of Heart — floor 50' }
             ] },
           { id: 'c1-b-4', order: 4,
-            text: 'Two more Outset hearts to remember: the big BLACK pig digs up buried treasure if you sprinkle All-Purpose Bait on the dark soil patches (bait comes from Beedle’s shop ship), and a lone rock spire off the coast can only be reached by gliding from the heights with the Deku Leaf.',
+            text: 'One more Outset heart to remember: the big BLACK pig digs up a buried Piece of Heart if you sprinkle All-Purpose Bait on the dark soil patches (bait comes from Beedle’s shop ship). With Orca’s 500 strikes and the Savage Labyrinth’s floor 50, that completes Outset’s three heart pieces.',
             callouts: [
-              { type: 'heart', refId: 'hp-01', later: true, label: 'Piece of Heart — black pig + All-Purpose Bait' },
-              { type: 'heart', refId: 'hp-02', later: true, label: 'Piece of Heart — Deku Leaf glide to the rock spire' }
+              { type: 'heart', refId: 'hp-01', later: true, label: 'Piece of Heart — black pig + All-Purpose Bait' }
             ] },
           { id: 'c1-b-5', order: 5,
             text: 'Completionist’s corner: every Outset islander has a figurine waiting in the Nintendo Gallery. You can’t take pictographs yet — the Picto Box comes at Windfall — but this checklist will be here when you sail back with it.',
@@ -215,17 +214,16 @@ WWC_DATA.chapters = [
               { type: 'sidequest', refId: 'sq-sinkingships', label: 'Sinking Ships beaten' }
             ] },
           { id: 'c3-c-3', order: 3,
-            text: 'After dark, the auction house lights up. Bidding is a war of nerves: hold A to charge your bid and time your pounce to break the room’s spirit — a huge raise late in the countdown usually seals it. The rotation of prizes includes TWO Pieces of Heart, Treasure Chart 18, and a Joy Pendant, so keep coming back on later nights (once you can conduct the Song of Passing, skipping to nightfall makes this painless).',
+            text: 'After dark, the auction house lights up. Bidding is a war of nerves: hold A to charge your bid and time your pounce to break the room’s spirit — a huge raise late in the countdown usually seals it. Across its rotation the auction offers a Piece of Heart, Treasure Chart 18, Treasure Chart 38, and a Joy Pendant, so keep coming back on later nights (once you can conduct the Song of Passing, skipping to nightfall makes this painless).',
             callouts: [
               { type: 'heart', refId: 'hp-07', label: 'Piece of Heart — auction prize' },
-              { type: 'heart', refId: 'hp-08', later: true, label: 'Piece of Heart — a later auction night' },
               { type: 'treasureChart', refId: 'tc-18', label: 'Treasure Chart 18 — auction prize' },
+              { type: 'treasureChart', refId: 'tc-38', label: 'Treasure Chart 38 — auction prize' },
               { type: 'sidequest', refId: 'sq-auction', later: true, label: 'Every auction prize claimed' }
             ] },
           { id: 'c3-c-4', order: 4,
-            text: 'Upstairs at the Picto Shop, Lenzo takes you on as a trainee if you complete three assignments with your new box: (1) catch Garrickson in the act of posting his doomed love letter, (2) catch Gossack in the cafe mid-flinch — he startles at anything, just watch and snap, and (3) frame Anton and Linda in one pictograph as they pass in the square, so their mutual crush has evidence. Finish all three and Lenzo rewards his new assistant with a Piece of Heart. His grander project — a Forest Firefly to unlock COLOR pictography — must wait for Forest Haven.',
+            text: 'Upstairs at the Picto Shop, Lenzo takes you on as a trainee if you complete three assignments with your new box: (1) catch Garrickson in the act of posting his doomed love letter, (2) catch Gossack in the cafe mid-flinch — he startles at anything, just watch and snap, and (3) frame Anton and Linda in one pictograph as they pass in the square, so their mutual crush has evidence. Finish all three and Lenzo makes you his assistant (a Joy Pendant now, and the right to buy his Legendary Pictographs later). His grander project — a Forest Firefly to unlock COLOR pictography — must wait for Forest Haven.',
             callouts: [
-              { type: 'heart', refId: 'hp-14', label: 'Piece of Heart — become Lenzo’s assistant' },
               { type: 'sidequest', refId: 'sq-pictobox', later: true, label: 'Deluxe Picto Box — finish after Forest Haven (firefly!)' }
             ] },
           { id: 'c3-c-5', order: 5,
@@ -309,9 +307,9 @@ WWC_DATA.chapters = [
         id: 'c4-d', title: 'Around the island (optional)', collapsedByDefault: true,
         steps: [
           { id: 'c4-d-1', order: 1,
-            text: 'Off the mountain path, past the bomb-flower stretch, a chest sits on a ledge just out of reach. You can attempt the fiddly cliff route now, or file it away for a trivial Deku Leaf glide after Forest Haven — either way, a Piece of Heart waits up there.',
+            text: 'Dragon Roost keeps paying out by mail. Beyond the mail-sorting and Golden-Feather hearts above, there’s a third: once you claim Farore’s Pearl (from Forest Haven’s dungeon), the Rito Chieftain — Prince Komali’s father — posts you a grateful letter with a Piece of Heart inside. Just check the mailbox after the pearl.',
             callouts: [
-              { type: 'heart', refId: 'hp-44', later: true, label: 'Piece of Heart — mountain-path ledge (Deku Leaf makes it easy)' }
+              { type: 'heart', refId: 'hp-48', later: true, label: 'Piece of Heart — Komali’s Father’s letter (after Farore’s Pearl)' }
             ] },
           { id: 'c4-d-2', order: 2,
             text: 'With the wind finally yours to command, a perfect first free sail: Pawprint Isle sits one square west. Crawl into the hole atop its grassy dome — among the ChuChus inside waits a Piece of Heart. (A rare Blue ChuChu also haunts Pawprint; see the checklist when you go jelly-hunting.)',
@@ -413,9 +411,9 @@ WWC_DATA.chapters = [
             text: 'To reach the Forbidden Woods you’ll need wings of your own. Inside Forest Haven, hop into the BABA BUDS — the friendly pink pods — and let them spring you from ledge to ledge, spiraling up the inside of the tree. At the crown, pluck your prize off the branch: the DEKU LEAF.',
             callouts: [] },
           { id: 'c6-b-2', order: 2,
-            text: 'The Deku Leaf is two items in one: on the ground it fans a gust (flip switches, shove things, annoy pigs); in the air it’s a glider that drinks from your MAGIC METER — watch the gauge, and remember a certain Great Fairy doubles it later. First flight assignment: from Forest Haven’s heights, ride the updrafts around the OUTSIDE of the tree to the lonely ledge holding a Piece of Heart.',
+            text: 'The Deku Leaf is two items in one: on the ground it fans a gust (flip switches, shove things, annoy pigs); in the air it’s a glider that drinks from your MAGIC METER — watch the gauge, and remember a certain Great Fairy doubles it later. Practice gliding on the updrafts around the tree; you’ll lean on it constantly. (Forest Haven’s own Piece of Heart isn’t up here — it’s a sunken-treasure salvage in the surrounding waters, marked by Treasure Chart 31. Come back with the chart and the Grappling Hook.)',
             callouts: [
-              { type: 'heart', refId: 'hp-18', label: 'Piece of Heart — glide to the outer ledge' }
+              { type: 'heart', refId: 'hp-41', later: true, label: 'Piece of Heart — salvage in Forest Haven’s waters (Chart 31)' }
             ] }
         ]
       },
@@ -593,7 +591,8 @@ WWC_DATA.chapters = [
             text: 'Shopping trip: near ROCK SPIRE ISLE floats a special Shop Ship run by a masked... let’s say “businessman of familiar silhouette.” His prices are outrageous and his stock is essential: an EMPTY BOTTLE for 500 rupees and a PIECE OF HEART for 950. With the wallet upgrades banked, both are buyable today — grind rupees by salvaging light rings at night or clearing camps. (Keep an eye out for the wandering Goron merchants on your travels, too — Zunari’s trading sequence moves one gift at a time.)',
             callouts: [
               { type: 'bottle', refId: 'bottle-beedle', label: 'Bottle #3 — Masked Beedle, 500 rupees' },
-              { type: 'heart', refId: 'hp-21', label: 'Piece of Heart — Masked Beedle, 950 rupees' }
+              { type: 'heart', refId: 'hp-21', label: 'Piece of Heart — Masked Beedle, 950 rupees' },
+              { type: 'heart', refId: 'hp-46', label: 'Piece of Heart — sink the tougher gunboat SE of Rock Spire Isle' }
             ] }
         ]
       }
@@ -715,7 +714,8 @@ WWC_DATA.chapters = [
               { type: 'figurine', refId: 'fig-moblin', label: 'Moblin — pictograph on the climb' },
               { type: 'figurine', refId: 'fig-miniblin', label: 'Miniblin — pictograph on the climb' },
               { type: 'figurine', refId: 'fig-bombchu', label: 'Bombchu — pictograph on the climb' },
-              { type: 'figurine', refId: 'fig-rat', label: 'Rat — pictograph on the climb' }
+              { type: 'figurine', refId: 'fig-rat', label: 'Rat — pictograph on the climb' },
+              { type: 'heart', refId: 'hp-45', label: 'Piece of Heart — chest in the fortress’s lower jail cell' }
             ] }
         ]
       },
@@ -752,11 +752,11 @@ WWC_DATA.chapters = [
               { type: 'heart', refId: 'hp-12', label: 'Piece of Heart — the islet chest, at night' }
             ] },
           { id: 'c10-d-3', order: 3,
-            text: 'THE GIRLS COME HOME: with the fortress emptied, Mila and Maggie return to Windfall — with reversed fortunes and a fresh crop of quests. Catch MILA sneaking toward Zunari’s safe at night and choose the TOP dialogue option every time; her reform is genuine and her bottle is yours. Upstairs at the auction house, rich MAGGIE wants her letter delivered to a Moblin named Moe (collect his reply from Ilari at the cafe), and her father will trade a Piece of Heart for 20 SKULL NECKLACES — the fortress you just cleared drops them by the handful.',
+            text: 'THE GIRLS COME HOME: with the fortress emptied, Mila and Maggie return to Windfall — with reversed fortunes and a fresh crop of quests. Catch MILA sneaking toward Zunari’s safe at night and choose the TOP dialogue option every time; her reform is genuine and her bottle is yours. Upstairs at the auction house, rich MAGGIE wants her letter delivered to a Moblin named Moe (collect his reply from Ilari at the cafe) — that delivery is the Piece of Heart. Her father, meanwhile, trades Treasure Chart 2 for 20 SKULL NECKLACES, which the fortress you just cleared drops by the handful.',
             callouts: [
               { type: 'bottle', refId: 'bottle-mila', label: 'Bottle #4 — Mila’s midnight change of heart' },
               { type: 'heart', refId: 'hp-10', label: 'Piece of Heart — Maggie & Moe’s letter' },
-              { type: 'heart', refId: 'hp-15', label: 'Piece of Heart — 20 Skull Necklaces' },
+              { type: 'treasureChart', refId: 'tc-02', label: 'Treasure Chart 2 — 20 Skull Necklaces to Maggie’s father' },
               { type: 'sidequest', refId: 'sq-maggiemoe', label: 'Maggie & Moe — the whole doomed romance' },
               { type: 'sidequest', refId: 'sq-skullnecklaces', label: 'Skull Necklaces delivered' }
             ] },
@@ -990,11 +990,11 @@ WWC_DATA.chapters = [
         id: 'c13-d', title: 'While you’re out here: the great sea harvest (optional)', collapsedByDefault: true,
         steps: [
           { id: 'c13-d-1', order: 1,
-            text: 'THE CABANA. Trade Mrs. Marie 20 Joy Pendants for the Cabana Deed (if you haven’t), then sail to the PRIVATE OASIS. Douse the fireplace and drop into the basement labyrinth for Triforce Chart 2; upstairs, solve the sliding-picture puzzle for a Piece of Heart. A Big Octo (100 rupees) also circles the oasis.',
+            text: 'THE CABANA. Trade Mrs. Marie 20 Joy Pendants for the Cabana Deed (if you haven’t), then sail to the PRIVATE OASIS. Douse the fireplace and drop into the basement labyrinth for Triforce Chart 2; the upstairs puzzle and the waterfall chest hold Treasure Chart 27. (No Piece of Heart at the cabana on GameCube — the Triforce Chart is the prize.) A Big Octo (100 rupees) also circles the oasis.',
             callouts: [
               { type: 'sidequest', refId: 'sq-cabanadeed', label: 'Cabana Deed — 20 Joy Pendants to Mrs. Marie' },
-              { type: 'heart', refId: 'hp-22', label: 'Piece of Heart — cabana sliding puzzle' },
-              { type: 'sidequest', refId: 'sq-cabanapuzzle', label: 'Cabana slide puzzle solved' },
+              { type: 'triforceChart', refId: 'tfc-2', label: 'Triforce Chart 2 — cabana basement labyrinth' },
+              { type: 'sidequest', refId: 'sq-cabanapuzzle', label: 'Cabana cleared out' },
               { type: 'bigOcto', refId: 'octo-oasis', label: 'Big Octo — Private Oasis (8 eyes, 100 rupees)' }
             ] },
           { id: 'c13-d-2', order: 2,
@@ -1044,7 +1044,7 @@ WWC_DATA.chapters = [
               { type: 'heart', refId: 'hp-28', label: 'Piece of Heart — Bird-Man Contest' }
             ] },
           { id: 'c13-d-7', order: 7,
-            text: 'THE REMAINING SEA-FLOOR HEARTS. With charts deciphered, salvage the island- and sea-heart pieces you haven’t yet: Angular Isles (Chart 15) and its summit heart, Pawprint (Chart 30), Forest Haven (Chart 31), Five-Star Isles (Chart 33), Three-Eye Reef (Chart 38 — mind the cannons), plus the seagull-switch hearts at Needle Rock Isle and the gun-platform heart at Stone Watcher. The Island Hearts and Sea Hearts Charts mark these if you want a map.',
+            text: 'THE REMAINING SEA-FLOOR HEARTS. With charts deciphered, salvage the island- and sea-heart pieces you haven’t yet. Island salvage: Crescent Moon (Chart 11), Angular Isles (Chart 15), Diamond Steppe (Chart 23), Pawprint (Chart 30), Forest Haven (Chart 31), Five-Star Isles (Chart 33), Three-Eye Reef (Chart 38 — mind the cannons), plus Rock Spire, Thorned Fairy Island, Bomb Island, and Southern Fairy Island. On-island hearts left: the Angular summit, the Needle Rock seagull-switch chest, the Stone Watcher gun platform, and the Bomb Island Magtail cave. And don’t forget the Goron trading reward out on the waves. The Island Hearts and Sea Hearts Charts map these for you.',
             callouts: [
               { type: 'heart', refId: 'hp-30', label: 'Piece of Heart — Angular Isles summit' },
               { type: 'heart', refId: 'hp-38', label: 'Piece of Heart — salvage, Angular Isles (Chart 15)' },
@@ -1052,11 +1052,15 @@ WWC_DATA.chapters = [
               { type: 'heart', refId: 'hp-41', label: 'Piece of Heart — salvage, Forest Haven (Chart 31)' },
               { type: 'heart', refId: 'hp-42', label: 'Piece of Heart — salvage, Five-Star Isles (Chart 33)' },
               { type: 'heart', refId: 'hp-43', label: 'Piece of Heart — salvage, Three-Eye Reef (Chart 38)' },
+              { type: 'heart', refId: 'hp-47', label: 'Piece of Heart — salvage, Rock Spire Isle' },
+              { type: 'heart', refId: 'hp-50', label: 'Piece of Heart — salvage, Thorned Fairy Island' },
+              { type: 'heart', refId: 'hp-51', label: 'Piece of Heart — salvage, Bomb Island waters' },
+              { type: 'heart', refId: 'hp-52', label: 'Piece of Heart — salvage, Southern Fairy Island' },
               { type: 'heart', refId: 'hp-35', label: 'Piece of Heart — Needle Rock Isle seagull switch' },
               { type: 'heart', refId: 'hp-33', label: 'Piece of Heart — Stone Watcher gun platform' },
-              { type: 'heart', refId: 'hp-29', label: 'Piece of Heart — Cliff Plateau Isles pillar' },
               { type: 'heart', refId: 'hp-32', label: 'Piece of Heart — Bomb Island Magtail cave' },
               { type: 'heart', refId: 'hp-37', label: 'Piece of Heart — salvage, Crescent Moon Island (Chart 11)' },
+              { type: 'heart', refId: 'hp-49', label: 'Piece of Heart — the traveling-Goron trading reward' },
               { type: 'specialChart', refId: 'sp-islandhearts', label: 'Island Hearts Chart' },
               { type: 'specialChart', refId: 'sp-seahearts', label: 'Sea Hearts Chart' }
             ] },
