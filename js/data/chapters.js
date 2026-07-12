@@ -530,8 +530,74 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch08', number: 8, title: 'Nayru’s Pearl', bossName: null,
-    intro: 'Storm clouds gather over Greatfish Isle. The hunt for the last pearl leads through bomb-wielding pirates, a midnight heist, and the great fish Jabun.',
-    sections: []
+    intro: 'The hunt for the third pearl starts at a graveyard of an island and ends in a hidden cave behind home. In between: eavesdropping, a heist, your first BOMBS — and after this chapter, the Great Sea truly opens its pockets. The optional section here is one of the richest in the game.',
+    sections: [
+      {
+        id: 'c8-a', title: 'The broken isle', collapsedByDefault: false,
+        steps: [
+          { id: 'c8-a-1', order: 1,
+            text: 'Set sail for Greatfish Isle, home of the water spirit Jabun — and find it torn to pieces, {{spoiler:shattered by Ganon’s searching}}. The sky closes in and an unnatural storm settles over the whole sea. Quill swoops in with the intelligence you need: Jabun fled to a secret cave behind OUTSET ISLAND, and Tetra’s pirates — who know it — are on Windfall, provisioning for the same trip.',
+            callouts: [
+              { type: 'heart', refId: 'hp-20', label: 'Piece of Heart — climb and glide to the top of the broken isle while you’re here' }
+            ] }
+        ]
+      },
+      {
+        id: 'c8-b', title: 'Thieves’ bombs', collapsedByDefault: false,
+        steps: [
+          { id: 'c8-b-1', order: 1,
+            text: 'On rain-lashed Windfall, the Bomb Shop’s lights burn late. Sneak around the back and listen in: {{spoiler:the pirates have trussed up Cannon the shopkeeper and helped themselves to his stock}} — and, crucially, you overhear the PASSWORD for boarding their ship.',
+            callouts: [] },
+          { id: 'c8-b-2', order: 2,
+            text: 'Down at the dock, give the password and climb aboard. Below deck, Niko is delighted to see his junior again — and his rope-swinging course got a promotion too. Beat round two (patience on the swings; wait for the full forward arc) and his “treasure beyond your wildest dreams” turns out to be exactly that: the pirates’ stolen BOMBS. Your bomb bag starts at 30; your boat can now fire its CANNON at will.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c8-c', title: 'Jabun and the third pearl', collapsedByDefault: false,
+        steps: [
+          { id: 'c8-c-1', order: 1,
+            text: 'Sail home through the storm to Outset and follow the cliffs around to the back of the island, where a huge stone slab seals a cave mouth. Ride the swells and time your CANNON shots to smash the door — the waves want to throw off your aim; fire on the rise.',
+            callouts: [] },
+          { id: 'c8-c-2', order: 2,
+            text: 'Inside waits JABUN, enormous and unbothered. He and the King of Red Lions confer entirely in untranslated ancient Hylian — one of the game’s best quiet jokes, and worth replaying someday with the Second Quest’s translations. What matters tonight: {{spoiler:the storm lifts, and NAYRU’S PEARL is yours}}. All three pearls at last — the sea itself is about to show you why it wanted them.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-jabun', later: true, label: 'Jabun — figurine via Lenzo’s Legendary Pictograph' }
+            ] }
+        ]
+      },
+      {
+        id: 'c8-d', title: 'The sea opens up — a bombs-in-hand harvest (optional)', collapsedByDefault: true,
+        steps: [
+          { id: 'c8-d-1', order: 1,
+            text: 'FAIRY RUN! Bombs unlock four Great Fairy fountains, and the order matters for the bomb bags (first visited gives 60, second gives the full 99). Start at home: the boulder in Outset’s Forest of Fairies hides the Bigger Wallet — you will desperately want wallet room for what Tingle charges later. Then Northern Fairy Island’s great shell (Biggest Wallet, 5,000), and the two bomb-bag fountains: Southern Fairy Island (bomb the boards) and Eastern Fairy Island (blast the sealed rock).',
+            callouts: [
+              { type: 'fairy', refId: 'fairy-outset', label: 'Great Fairy — Outset (bomb the forest boulder)' },
+              { type: 'upgrade', refId: 'up-wallet1', label: 'Bigger Wallet — 1,000 rupees' },
+              { type: 'fairy', refId: 'fairy-northern', label: 'Great Fairy — Northern Fairy Island' },
+              { type: 'upgrade', refId: 'up-wallet2', label: 'Biggest Wallet — 5,000 rupees' },
+              { type: 'fairy', refId: 'fairy-southern', label: 'Great Fairy — Southern Fairy Island' },
+              { type: 'upgrade', refId: 'up-bombbag1', label: 'Bomb Bag — 60 (first bomb fairy)' },
+              { type: 'fairy', refId: 'fairy-eastern', label: 'Great Fairy — Eastern Fairy Island' },
+              { type: 'upgrade', refId: 'up-bombbag2', label: 'Bomb Bag — 99 (second bomb fairy)' }
+            ] },
+          { id: 'c8-d-2', order: 2,
+            text: 'Bombable islands, now open: STAR ISLAND (a stone’s throw from the Forsaken Fortress) hides a combat cave with a Piece of Heart under its boulder. And at SPECTACLE ISLAND, Salvatore’s barrel-shooting game finally has a worthy customer — your cannon. First win: Piece of Heart. Second win: Treasure Chart 17.',
+            callouts: [
+              { type: 'secret', refId: 'cave-starisland', label: 'Secret cave — Star Island (bomb the boulder)' },
+              { type: 'heart', refId: 'hp-36', label: 'Piece of Heart — clear the Star Island cave' },
+              { type: 'heart', refId: 'hp-27', label: 'Piece of Heart — Spectacle Island cannon game' },
+              { type: 'treasureChart', refId: 'tc-17', label: 'Treasure Chart 17 — win the game twice' }
+            ] },
+          { id: 'c8-d-3', order: 3,
+            text: 'Shopping trip: near ROCK SPIRE ISLE floats a special Shop Ship run by a masked... let’s say “businessman of familiar silhouette.” His prices are outrageous and his stock is essential: an EMPTY BOTTLE for 500 rupees and a PIECE OF HEART for 950. With the wallet upgrades banked, both are buyable today — grind rupees by salvaging light rings at night or clearing camps. (Keep an eye out for the wandering Goron merchants on your travels, too — Zunari’s trading sequence moves one gift at a time.)',
+            callouts: [
+              { type: 'bottle', refId: 'bottle-beedle', label: 'Bottle #3 — Masked Beedle, 500 rupees' },
+              { type: 'heart', refId: 'hp-21', label: 'Piece of Heart — Masked Beedle, 950 rupees' }
+            ] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch09', number: 9, title: 'Tower of the Gods', bossName: 'Gohdan',
