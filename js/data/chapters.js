@@ -918,8 +918,170 @@ WWC_DATA.chapters = [
   },
   {
     id: 'ch13', number: 13, title: 'The Triforce', bossName: null,
-    intro: 'The grand treasure hunt: the Ghost Ship, the Savage Labyrinth, eight charts, eight 398-rupee visits to Tingle, and eight shards salvaged from the deep. The heart of the 100% run — and where this guide’s checklists earn their keep.',
-    sections: []
+    intro: 'The King asks for the Triforce of Courage, shattered into eight shards and scattered across the sea floor. This is the game’s great treasure hunt — and, on GameCube, its most demanding stretch: EIGHT Triforce Charts, each deciphered by Tingle for 398 rupees (3,184 in all), then eight shards salvaged from the deep. It’s also the natural home for everything else on the sea. Take your time; this is the chapter the whole tracker was built for.',
+    sections: [
+      {
+        id: 'c13-a', title: 'Before the hunt: charts about charts', collapsedByDefault: false,
+        steps: [
+          { id: 'c13-a-1', order: 1,
+            text: 'Two charts make the whole hunt sane — get them first. The IN-CREDIBLE CHART arrives in your mailbox (pay the 201-rupee postage): it marks the sea squares of all eight Triforce sectors, so you know exactly where to salvage once a chart is deciphered. And the GHOST SHIP CHART hides in the warp-jar maze inside DIAMOND STEPPE ISLAND’s secret cave — Hookshot up into the pots and follow them to the chest. It reveals where the Ghost Ship appears for each phase of the moon.',
+            callouts: [
+              { type: 'specialChart', refId: 'sp-incredible', label: 'IN-credible Chart — mailbox, 201 rupees (marks the 8 sectors)' },
+              { type: 'specialChart', refId: 'sp-ghostship', label: 'Ghost Ship Chart — Diamond Steppe secret cave' },
+              { type: 'secret', refId: 'cave-diamondsteppe', label: 'Secret cave — Diamond Steppe (warp-jar maze)' }
+            ] },
+          { id: 'c13-a-2', order: 2,
+            text: 'While you’re at Diamond Steppe: a Big Octo circles nearby (100 rupees), and Treasure Chart 23 salvages a Piece of Heart in these waters. Bank them now — efficient sailing is the whole game on GameCube.',
+            callouts: [
+              { type: 'bigOcto', refId: 'octo-diamond', label: 'Big Octo — Diamond Steppe (8 eyes, 100 rupees)' },
+              { type: 'heart', refId: 'hp-39', label: 'Piece of Heart — salvage with Treasure Chart 23' }
+            ] }
+        ]
+      },
+      {
+        id: 'c13-b', title: 'The eight Triforce Charts', collapsedByDefault: false,
+        steps: [
+          { id: 'c13-b-1', order: 1,
+            text: 'ISLET OF STEEL (Chart 1) & GHOST SHIP (Chart 4). At the Islet of Steel, bomb the patrolling warships, then sail into the low opening to reach the chart chest inside. And with the Ghost Ship Chart read, use the Song of Passing to summon the correct moon, sail the spectral ship where it appears, and clear the ghosts inside for Triforce Chart 4.',
+            callouts: [
+              { type: 'triforceChart', refId: 'tfc-1', label: 'Triforce Chart 1 — Islet of Steel' },
+              { type: 'triforceChart', refId: 'tfc-4', label: 'Triforce Chart 4 — inside the Ghost Ship' },
+              { type: 'sidequest', refId: 'sq-ghostship', label: 'The Ghost Ship — hunted down' }
+            ] },
+          { id: 'c13-b-2', order: 2,
+            text: 'STONE WATCHER (Chart 7) & OVERLOOK (Chart 8) — the two Darknut caves. Under Stone Watcher Island’s great stone head (Power Bracelets to lift it) lies a gauntlet of trial rooms ending in Triforce Chart 7. On Overlook Island, Hookshot up the palm trees to the hidden hole and survive its shrine-room fights — including paired Darknuts — for Triforce Chart 8. Both drop Knight’s Crests; feed Orca’s Hurricane Spin tally.',
+            callouts: [
+              { type: 'triforceChart', refId: 'tfc-7', label: 'Triforce Chart 7 — Stone Watcher Island cave' },
+              { type: 'secret', refId: 'cave-stonewatcher', label: 'Secret cave — Stone Watcher Island' },
+              { type: 'triforceChart', refId: 'tfc-8', label: 'Triforce Chart 8 — Overlook Island cave' },
+              { type: 'secret', refId: 'cave-overlook', label: 'Secret cave — Overlook Island' }
+            ] },
+          { id: 'c13-b-3', order: 3,
+            text: 'BIRD’S PEAK ROCK (Chart 3) & NEEDLE ROCK light ring (Chart 5). At Bird’s Peak Rock, toss Hyoi Pears to steer seagulls into all the switches on the rock spires, opening the sealed cave and its Triforce Chart 3. And at night, a golden LIGHT RING glows on the water near Needle Rock Isle — sink the golden warship inside it with cannon fire, then grapple up Triforce Chart 5. (The Light Ring Chart, if you’ve found it, marks every such ring.)',
+            callouts: [
+              { type: 'triforceChart', refId: 'tfc-3', label: 'Triforce Chart 3 — Bird’s Peak Rock cave' },
+              { type: 'secret', refId: 'cave-birdspeak', label: 'Secret cave — Bird’s Peak Rock' },
+              { type: 'triforceChart', refId: 'tfc-5', label: 'Triforce Chart 5 — golden warship, Needle Rock light ring' },
+              { type: 'specialChart', refId: 'sp-lightring', label: 'Light Ring Chart — marks the night light rings' }
+            ] },
+          { id: 'c13-b-4', order: 4,
+            text: 'PRIVATE OASIS (Chart 2) & SAVAGE LABYRINTH (Chart 6) — the two you may already hold. If you’ve solved the cabana (see the side-quest section below), Triforce Chart 2 is in its basement labyrinth. And Triforce Chart 6 waits on floor 30 of the Savage Labyrinth beneath Outset — which, if you push on to floor 50, also hands over a Piece of Heart.',
+            callouts: [
+              { type: 'triforceChart', refId: 'tfc-2', label: 'Triforce Chart 2 — Private Oasis cabana labyrinth' },
+              { type: 'triforceChart', refId: 'tfc-6', label: 'Triforce Chart 6 — Savage Labyrinth floor 30' }
+            ] }
+        ]
+      },
+      {
+        id: 'c13-c', title: 'Tingle’s price & the salvage', collapsedByDefault: false,
+        steps: [
+          { id: 'c13-c-1', order: 1,
+            text: 'A Triforce Chart is useless until Tingle reads it. Sail to TINGLE ISLAND (his chart marks it) and hand him each chart for 398 RUPEES apiece — that’s 3,184 rupees to decipher all eight. This is why the two wallet upgrades matter so much: without the 5,000-rupee wallet you’ll be making a lot of rupee-grinding trips. Deciphered, each chart finally shows the X where its shard sank.',
+            callouts: [
+              { type: 'figurine', refId: 'fig-ankle', later: true, label: 'Ankle — pictograph Tingle’s brother on the island' },
+              { type: 'figurine', refId: 'fig-davidjr', later: true, label: 'David Jr. — the green-suited “brother”' }
+            ] },
+          { id: 'c13-c-2', order: 2,
+            text: 'Now the salvage. Sail to each deciphered X, hover over the glowing spot, and haul up the shard with the Grappling Hook — eight times, all across the Great Sea. When the last TRIFORCE SHARD rises from the deep, the Triforce of Courage reassembles in a swell of music. The King of Red Lions turns for the one place left: down through the sea, to Hyrule, and the tower waiting under the waves.',
+            callouts: [] }
+        ]
+      },
+      {
+        id: 'c13-d', title: 'While you’re out here: the great sea harvest (optional)', collapsedByDefault: true,
+        steps: [
+          { id: 'c13-d-1', order: 1,
+            text: 'THE CABANA. Trade Mrs. Marie 20 Joy Pendants for the Cabana Deed (if you haven’t), then sail to the PRIVATE OASIS. Douse the fireplace and drop into the basement labyrinth for Triforce Chart 2; upstairs, solve the sliding-picture puzzle for a Piece of Heart. A Big Octo (100 rupees) also circles the oasis.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-cabanadeed', label: 'Cabana Deed — 20 Joy Pendants to Mrs. Marie' },
+              { type: 'heart', refId: 'hp-22', label: 'Piece of Heart — cabana sliding puzzle' },
+              { type: 'sidequest', refId: 'sq-cabanapuzzle', label: 'Cabana slide puzzle solved' },
+              { type: 'bigOcto', refId: 'octo-oasis', label: 'Big Octo — Private Oasis (8 eyes, 100 rupees)' }
+            ] },
+          { id: 'c13-d-2', order: 2,
+            text: 'SAVAGE LABYRINTH. Under the headland boulder on Outset, fifty floors of pure combat. Bring potions and a full quiver; the Light Arrows help near the bottom. Floor 30 holds Triforce Chart 6, and clearing all the way to floor 50 earns a Piece of Heart. (GameCube reward — HD swapped it for the Hero’s Charm.)',
+            callouts: [
+              { type: 'secret', refId: 'cave-savage', label: 'Savage Labyrinth — under Outset’s headland boulder' },
+              { type: 'sidequest', refId: 'sq-savage', label: 'Savage Labyrinth — all 50 floors' },
+              { type: 'heart', refId: 'hp-03', label: 'Piece of Heart — floor 50' }
+            ] },
+          { id: 'c13-d-3', order: 3,
+            text: 'THE WITHERED TREES. Bottle Forest Water at Forest Haven and water all eight withered saplings within 20 minutes: Star Island, Cliff Plateau Isles, Shark Island, Greatfish Isle, Needle Rock Isle, Private Oasis, Eastern Fairy Island, Mother & Child Isles. The Ballad of Gales makes the route possible — warp between clusters. The last tree blooms into a Piece of Heart, and each Korok poses for the gallery besides.',
+            callouts: [
+              { type: 'sidequest', refId: 'sq-witheredtrees', label: 'The eight withered trees — 20-minute run' },
+              { type: 'heart', refId: 'hp-19', label: 'Piece of Heart — all eight watered' }
+            ] },
+          { id: 'c13-d-4', order: 4,
+            text: 'BIG OCTOS (6) & THE MAGIC FAIRY. Under circling seagull swarms lurk six Big Octos — shoot every eye. Two-Eye Reef’s (4 eyes) hides the Great Fairy who DOUBLES your magic meter; do it before the Bird-Man Contest. Tingle Island and Seven-Star Isles (12 eyes each) give Pieces of Heart; Fire Mountain, Private Oasis and Diamond Steppe (8 eyes) pay 100 rupees.',
+            callouts: [
+              { type: 'bigOcto', refId: 'octo-twoeye', label: 'Big Octo — Two-Eye Reef (Great Fairy: double magic)' },
+              { type: 'fairy', refId: 'fairy-twoeye', label: 'Great Fairy — Two-Eye Reef (double magic meter)' },
+              { type: 'upgrade', refId: 'up-magic', label: 'Double Magic Meter' },
+              { type: 'bigOcto', refId: 'octo-tingle', label: 'Big Octo — Tingle Island (12 eyes, Piece of Heart)' },
+              { type: 'heart', refId: 'hp-23', label: 'Piece of Heart — Tingle Island Big Octo' },
+              { type: 'bigOcto', refId: 'octo-sevenstar', label: 'Big Octo — Seven-Star Isles (12 eyes, Piece of Heart)' },
+              { type: 'heart', refId: 'hp-24', label: 'Piece of Heart — Seven-Star Isles Big Octo' },
+              { type: 'bigOcto', refId: 'octo-firemtn', label: 'Big Octo — Fire Mountain (8 eyes, 100 rupees)' }
+            ] },
+          { id: 'c13-d-5', order: 5,
+            text: 'SUBMARINES (7). The Submarine Chart (Boating Course secret cave) marks them all. Clear each hold for its prize: Bomb Island (Bottle #2!), Five-Star Isles (Piece of Heart), Six-Eye Reef (Piece of Heart), Headstone Island (Chart 14), Northern Fairy Island (Chart 22), Crescent Moon Island (Chart 9), and the Flight Control Platform (Platform Chart).',
+            callouts: [
+              { type: 'specialChart', refId: 'sp-submarine', label: 'Submarine Chart — Boating Course secret cave' },
+              { type: 'secret', refId: 'cave-boating', label: 'Secret cave — Boating Course' },
+              { type: 'submarine', refId: 'sub-bomb', label: 'Submarine — Bomb Island (Bottle #2)' },
+              { type: 'bottle', refId: 'bottle-submarine', label: 'Bottle #2 — Bomb Island submarine' },
+              { type: 'submarine', refId: 'sub-fivestar', label: 'Submarine — Five-Star Isles (Piece of Heart)' },
+              { type: 'heart', refId: 'hp-25', label: 'Piece of Heart — Five-Star Isles submarine' },
+              { type: 'submarine', refId: 'sub-sixeye', label: 'Submarine — Six-Eye Reef (Piece of Heart)' },
+              { type: 'heart', refId: 'hp-26', label: 'Piece of Heart — Six-Eye Reef submarine' },
+              { type: 'submarine', refId: 'sub-crescent', label: 'Submarine — Crescent Moon Island (Chart 9)' },
+              { type: 'submarine', refId: 'sub-northernfairy', label: 'Submarine — Northern Fairy Island (Chart 22)' },
+              { type: 'submarine', refId: 'sub-fcp', label: 'Submarine — Flight Control Platform (Platform Chart)' },
+              { type: 'specialChart', refId: 'sp-platform', label: 'Platform Chart — from the FCP submarine' }
+            ] },
+          { id: 'c13-d-6', order: 6,
+            text: 'THE BIRD-MAN CONTEST. At the Flight Control Platform, beat the Deku Leaf distance record: set the wind straight down the runway, glide, and milk the cyclone updraft — the doubled magic meter makes it far easier. Reward: a Piece of Heart.',
+            callouts: [
+              { type: 'heart', refId: 'hp-28', label: 'Piece of Heart — Bird-Man Contest' }
+            ] },
+          { id: 'c13-d-7', order: 7,
+            text: 'THE REMAINING SEA-FLOOR HEARTS. With charts deciphered, salvage the island- and sea-heart pieces you haven’t yet: Angular Isles (Chart 15) and its summit heart, Pawprint (Chart 30), Forest Haven (Chart 31), Five-Star Isles (Chart 33), Three-Eye Reef (Chart 38 — mind the cannons), plus the seagull-switch hearts at Needle Rock Isle and the gun-platform heart at Stone Watcher. The Island Hearts and Sea Hearts Charts mark these if you want a map.',
+            callouts: [
+              { type: 'heart', refId: 'hp-30', label: 'Piece of Heart — Angular Isles summit' },
+              { type: 'heart', refId: 'hp-38', label: 'Piece of Heart — salvage, Angular Isles (Chart 15)' },
+              { type: 'heart', refId: 'hp-40', label: 'Piece of Heart — salvage, Pawprint Isle (Chart 30)' },
+              { type: 'heart', refId: 'hp-41', label: 'Piece of Heart — salvage, Forest Haven (Chart 31)' },
+              { type: 'heart', refId: 'hp-42', label: 'Piece of Heart — salvage, Five-Star Isles (Chart 33)' },
+              { type: 'heart', refId: 'hp-43', label: 'Piece of Heart — salvage, Three-Eye Reef (Chart 38)' },
+              { type: 'heart', refId: 'hp-35', label: 'Piece of Heart — Needle Rock Isle seagull switch' },
+              { type: 'heart', refId: 'hp-33', label: 'Piece of Heart — Stone Watcher gun platform' },
+              { type: 'heart', refId: 'hp-29', label: 'Piece of Heart — Cliff Plateau Isles pillar' },
+              { type: 'heart', refId: 'hp-32', label: 'Piece of Heart — Bomb Island Magtail cave' },
+              { type: 'heart', refId: 'hp-37', label: 'Piece of Heart — salvage, Crescent Moon Island (Chart 11)' },
+              { type: 'specialChart', refId: 'sp-islandhearts', label: 'Island Hearts Chart' },
+              { type: 'specialChart', refId: 'sp-seahearts', label: 'Sea Hearts Chart' }
+            ] },
+          { id: 'c13-d-10', order: 10,
+            text: 'WINDFALL LOOSE ENDS. With the Deluxe Picto Box in hand, close out the town’s photo quest: take a COLOR pictograph of Linda, show it to Anton, and once the bashful pair finally meet, talk to Linda at the cafe for a Piece of Heart. And keep chipping at the Nintendo Gallery — Carlov’s one-a-day pace means the 134 figurines are the last thing you’ll finish. The Song of Passing is your friend.',
+            callouts: [
+              { type: 'heart', refId: 'hp-09', label: 'Piece of Heart — Linda & Anton (color pictograph)' },
+              { type: 'sidequest', refId: 'sq-gallery', label: 'Nintendo Gallery — the long haul to 134' }
+            ] },
+          { id: 'c13-d-8', order: 8,
+            text: 'THE LONG COLLECTIONS. Now’s the time to close out the sea-wide hunts the checklists have been tracking: the 20 SECRET CAVES (Secret Cave Chart, salvaged at Overlook via Chart 13), the 6 BIG OCTOS, the remaining SUBMARINES, and the 23 BLUE CHUCHUS (their Blue Chu Jelly brews Doc Bandam’s finest potion — see the Blue ChuChus checklist for the island list). Every one of these has its own tab in this guide; sail with a checklist open.',
+            callouts: [
+              { type: 'specialChart', refId: 'sp-secretcave', label: 'Secret Cave Chart — salvaged at Overlook (Chart 13)' },
+              { type: 'treasureChart', refId: 'tc-13', label: 'Treasure Chart 13 — salvages the Secret Cave Chart' }
+            ] },
+          { id: 'c13-d-9', order: 9,
+            text: 'THE OCTO CHART & GREAT FAIRY CHART round out the special charts: the Octo Chart salvages at Northern Triangle Island (via Treasure Chart 26) and marks all six Big Octos; the Great Fairy Chart (salvaged near the reefs) marks every fairy fountain. And whenever you have the rupees, keep visiting Tingle — those 398-rupee deciphers won’t pay for themselves.',
+            callouts: [
+              { type: 'specialChart', refId: 'sp-octo', label: 'Octo Chart — salvaged at Northern Triangle Island' },
+              { type: 'treasureChart', refId: 'tc-26', label: 'Treasure Chart 26 — salvages the Octo Chart' },
+              { type: 'specialChart', refId: 'sp-greatfairy', label: 'Great Fairy Chart — marks all 8 fountains' }
+            ] }
+        ]
+      }
+    ]
   },
   {
     id: 'ch14', number: 14, title: 'Ganon’s Tower', bossName: 'Ganondorf',
