@@ -22,10 +22,14 @@
      NOTE: the project brief says "10" special charts but names 11 —
      all 11 are listed here so nothing gets lost.
 
-   REVIEW NOTES (compiled offline; please spot-check in game / on a wiki):
-   - A few figurine names & room placements, the Blue ChuChu island list,
-     and per-chart treasure details marked "details land with its chapter"
-     are best-effort and will be tightened as each chapter is written.
+   VERIFICATION: heart pieces, side-quest rewards (Hero's Charm = 40 total
+   Joy Pendants; cabana = Triforce Chart 2; Skull Necklaces = Treasure Chart
+   2), submarines, Great Fairy rewards, and the 23 Blue ChuChu locations were
+   checked against the Wind Waker Randomizer's ROM-accurate GameCube item data
+   (logic/item_locations.txt + logic/macros.txt) and cross-referenced with
+   guides. Still best-effort: a few figurine photo-timing windows (marked
+   "verify" inline) and the "details land with its chapter" treasure-chart
+   flavor text.
    ========================================================================== */
 
 window.WWC_DATA = window.WWC_DATA || {};
@@ -61,7 +65,7 @@ WWC_DATA.collectibles = [
     howTo: 'Fight down all 50 floors. Floor 30 holds Triforce Chart 6; floor 50 holds this Piece of Heart. (GameCube reward — the HD version swapped it.)' },
   { id: 'hp-04', name: 'Outset — Orca’s 500 strikes', category: 'hearts', chapterHint: 1,
     locationText: 'Orca’s house, Outset Island',
-    howTo: 'Spar with Orca and land 500 total hits across your visits — he keeps count. Reach the mark and he hands over a Piece of Heart. (Verify the exact count in game; 500 is the commonly cited number.)' },
+    howTo: 'Spar with Orca and land 500 total hits across your visits — he keeps count. Reach 500 and he hands over a Piece of Heart.' },
   { id: 'hp-05', name: 'Windfall — Killer Bees hide-and-seek', category: 'hearts', chapterHint: 3,
     locationText: 'Windfall Island, schoolyard',
     howTo: 'Talk to Mrs. Marie, then find all four Killer Bees hiding around town (behind the bomb shop, up the tree, behind the gravestone, by the town gate). Ivan pays up.' },
@@ -250,7 +254,7 @@ WWC_DATA.collectibles = [
     howTo: 'Its treasure (200 rupees) lies at Headstone Island.' },
   { id: 'tc-41', name: 'Treasure Chart 41', category: 'treasureCharts', chapterHint: 13,
     locationText: 'Five-Eye Reef — details land with its chapter',
-    howTo: 'Its treasure lies at Four-Eye Reef. (Verify reward: commonly listed as the Great Fairy Chart’s salvage partner.)' },
+    howTo: 'Its treasure — the Great Fairy Chart — is salvaged at Four-Eye Reef.' },
   /* The remaining charts are fully covered inline as each chapter lands. */
   { id: 'tc-01', name: 'Treasure Chart 1',  category: 'treasureCharts', chapterHint: null, locationText: 'Details land with its chapter', howTo: 'Find the chart, then salvage the treasure at the X it reveals.' },
   { id: 'tc-02', name: 'Treasure Chart 2',  category: 'treasureCharts', chapterHint: null, locationText: 'Details land with its chapter', howTo: 'Find the chart, then salvage the treasure at the X it reveals.' },
@@ -325,7 +329,7 @@ WWC_DATA.collectibles = [
     locationText: 'Salvaged at Northern Triangle Island (via Treasure Chart 26)',
     howTo: 'Marks all 6 Big Octos.' },
   { id: 'sp-greatfairy', name: 'Great Fairy Chart', category: 'specialCharts', chapterHint: 13,
-    locationText: 'Salvaged at Four-Eye Reef (via Treasure Chart 41 — verify)',
+    locationText: 'Salvaged at Four-Eye Reef (via Treasure Chart 41)',
     howTo: 'Marks every Great Fairy fountain.' },
   { id: 'sp-islandhearts', name: 'Island Hearts Chart', category: 'specialCharts', chapterHint: 13,
     locationText: 'Details land with its chapter',
@@ -437,7 +441,7 @@ WWC_DATA.collectibles = [
   { id: 'fig-hoho',      name: 'Old Man Ho Ho', category: 'figurines', group: 'Great Sea Room', chapterHint: 3, locationText: 'Various islands', howTo: 'Pictograph one of the telescope-gazing wanderers.' },
   { id: 'fig-salvagecorp', name: 'Salvage Corp.', category: 'figurines', group: 'Great Sea Room', chapterHint: 3, locationText: 'Great Sea', howTo: 'Pictograph the cheerful salvage crew at work.' },
   { id: 'fig-fishman',   name: 'Fishman',    category: 'figurines', group: 'Great Sea Room', chapterHint: 3, locationText: 'Great Sea, every quadrant', howTo: 'Pictograph one of the map-filling fish (toss bait first so he surfaces).' },
-  { id: 'fig-merchants', name: 'Traveling Merchants', category: 'figurines', group: 'Great Sea Room', chapterHint: 3, locationText: 'Windfall, Greatfish, Bomb Island area', howTo: 'Pictograph the wandering Goron traders. (Verify: single figurine covering the trio.)' },
+  { id: 'fig-merchants', name: 'Traveling Merchants', category: 'figurines', group: 'Great Sea Room', chapterHint: 3, locationText: 'Windfall, Greatfish, Bomb Island area', howTo: 'Pictograph the wandering Goron traders.' },
   { id: 'fig-zephos',    name: 'Zephos',     category: 'figurines', group: 'Great Sea Room', chapterHint: 4, locationText: 'Wind Shrine, Dragon Roost', howTo: 'Pictograph the kindly wind god.' },
   { id: 'fig-cyclos',    name: 'Cyclos',     category: 'figurines', group: 'Great Sea Room', chapterHint: 8, locationText: 'Inside his cyclones', howTo: 'Pictograph the vengeful wind god mid-tantrum — snap fast before he warps you.' },
   { id: 'fig-greatfairy', name: 'Great Fairy', category: 'figurines', group: 'Great Sea Room', chapterHint: 3, locationText: 'Any Great Fairy Fountain', howTo: 'Pictograph a Great Fairy at her fountain.' },
@@ -483,8 +487,8 @@ WWC_DATA.collectibles = [
   { id: 'fig-magtail',   name: 'Magtail',    category: 'figurines', group: 'Forsaken Fortress Room', chapterHint: 5, locationText: 'Dragon Roost Cavern, caves', howTo: 'Pictograph the lava centipede.' },
   { id: 'fig-mothula',   name: 'Mothula',    category: 'figurines', group: 'Forsaken Fortress Room', chapterHint: 7, locationText: 'Forbidden Woods', howTo: 'Pictograph the grounded moth.' },
   { id: 'fig-wingedmothula', name: 'Winged Mothula', category: 'figurines', group: 'Forsaken Fortress Room', chapterHint: 7, locationText: 'Forbidden Woods (miniboss)', howTo: 'Pictograph it airborne, wings out.' },
-  { id: 'fig-bubble',    name: 'Bubble',     category: 'figurines', group: 'Forsaken Fortress Room', chapterHint: 9, locationText: 'Dungeons', howTo: 'Pictograph the flaming skull. (Verify name/membership.)' },
-  { id: 'fig-cannon',    name: 'Cannon',     category: 'figurines', group: 'Forsaken Fortress Room', chapterHint: 2, locationText: 'Forsaken Fortress, reefs, platforms', howTo: 'Pictograph a mounted cannon emplacement. (Verify membership.)' },
+  { id: 'fig-bubble',    name: 'Bubble',     category: 'figurines', group: 'Forsaken Fortress Room', chapterHint: 9, locationText: 'Dungeons', howTo: 'Pictograph the flaming skull (the Red & Blue Bubble set).' },
+  { id: 'fig-cannon',    name: 'Cannon',     category: 'figurines', group: 'Forsaken Fortress Room', chapterHint: 2, locationText: 'Windfall Island bomb shop', howTo: 'Pictograph the cannon on display in the Windfall bomb shop.' },
   { id: 'fig-phantomganon', name: 'Phantom Ganon', category: 'figurines', group: 'Forsaken Fortress Room', chapterHint: 10, locationText: 'Forsaken Fortress, Ganon’s Tower', missable: true,
     howTo: 'MISSABLE! Pictograph the phantom during one of his fights.' },
 
@@ -632,7 +636,7 @@ WWC_DATA.collectibles = [
   { id: 'octo-sevenstar',name: 'Big Octo — Seven-Star Isles (12 eyes)', category: 'bigOctos', chapterHint: 13, locationText: 'Seven-Star Isles', howTo: 'Twelve eyes. Reward: Piece of Heart.' },
 
   /* ------------------------------------------------------------------ *
-   *  BLUE CHUCHUS (23) — island list is best-effort offline; exact      *
+   *  BLUE CHUCHUS (23) — verified against wwrando logic/macros.txt        *
    *  spots are detailed as each chapter lands. (REVIEW)                 *
    * ------------------------------------------------------------------ */
   { id: 'chu-01', name: 'Blue ChuChu — Star Island', category: 'blueChuChus', chapterHint: 13, locationText: 'Star Island, under a boulder', howTo: 'Bomb the boulder to flush it out. Stun it (Boomerang/arrow) then strike — if it escapes it splits its jelly!' },
