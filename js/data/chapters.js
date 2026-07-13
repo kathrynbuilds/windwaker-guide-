@@ -234,7 +234,7 @@ WWC_DATA.chapters = [
               { type: 'sidequest', refId: 'sq-zunari', later: true, label: 'Trading sequence — Magic Armor' }
             ] },
           { id: 'c3-c-6', order: 6,
-            text: 'By the gravestone, Tott is dancing his heart out and desperate for a conductor — but you don’t carry a baton yet. Remember him: the Song of Passing (day/night on demand) is arguably the most useful optional song in the game, and it’s your very first errand once the Wind Waker is in hand. Also file away: the townsfolk themselves are gallery subjects — 27 portraits in the Windfall room alone — but Carlov only accepts COLOR pictographs, so the great photo safari waits for the Deluxe Picto Box. Track them in the Figurines checklist. (A rare Blue ChuChu also calls this island home — see the Blue ChuChus checklist.)',
+            text: 'By the gravestone, Tott is dancing his heart out and desperate for a conductor — but you don’t carry a baton yet. Remember him: the Song of Passing (day/night on demand) is arguably the most useful optional song in the game, and it’s your very first errand once the Wind Waker is in hand. Also file away: the townsfolk themselves are gallery subjects — 27 portraits in the Windfall room alone — but Carlov only accepts COLOR pictographs, so the great photo safari waits for the Deluxe Picto Box. Track them in the Figurines checklist.',
             callouts: [
               { type: 'song', refId: 'song-passing', later: true, label: 'Song of Passing — return with the Wind Waker' },
               { type: 'secret', refId: 'chu-02', later: true, label: 'Blue ChuChu — on this island' }
@@ -316,7 +316,7 @@ WWC_DATA.chapters = [
             callouts: [
               { type: 'heart', refId: 'hp-31', label: 'Piece of Heart — inside Pawprint’s dome' },
               { type: 'secret', refId: 'cave-pawprint-chuchu', label: 'Secret cave — the ChuChu dome' },
-              { type: 'secret', refId: 'chu-04', later: true, label: 'Blue ChuChu — on Pawprint Isle' }
+              { type: 'secret', refId: 'chu-08', later: true, label: 'Blue ChuChu — atop Pawprint’s big stone ChuChu statue' }
             ] },
           { id: 'c4-d-3', order: 3,
             text: 'Two island notes for later: Dragon Roost hides a combat-filled secret cave of its own (see the Secret Caves checklist once you’re better armed), and — IMPORTANT for gallery completionists — the Rito named KOGOLI will not be around forever. The moment you own the Deluxe Picto Box, sail back here and photograph him before anyone else on your list.',
@@ -433,7 +433,7 @@ WWC_DATA.chapters = [
               { type: 'figurine', refId: 'fig-manny', later: true, label: 'Manny — the superfan' }
             ] },
           { id: 'c6-c-3', order: 3,
-            text: 'Two forest notes for later: bottle some FOREST WATER before a future trip — after the Korok ceremony, eight saplings will wither across the sea, and watering all eight within the water’s 20-minute freshness timer earns a Piece of Heart (the GameCube timer is tight; plan the route before scooping). And a rare Blue ChuChu haunts the haven — see the checklist when hunting jelly for Doc Bandam’s best potion.',
+            text: 'Two forest notes for later: bottle some FOREST WATER before a future trip — after the Korok ceremony, eight saplings will wither across the sea, and watering all eight within the water’s 20-minute freshness timer earns a Piece of Heart (the GameCube timer is tight; plan the route before scooping).',
             callouts: [
               { type: 'sidequest', refId: 'sq-witheredtrees', later: true, label: 'Withered trees — after the ceremony (20-minute timer!)' },
               { type: 'heart', refId: 'hp-19', later: true, label: 'Piece of Heart — all eight saplings watered' },
